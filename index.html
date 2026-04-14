@@ -1,76 +1,154 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 <head>
-  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
-  <title>Hello, World!</title>
-  <style>
-  body{
-    background:linear-gradient(140deg,cyan,white,blue);
-    background-size:contain;
-  }
-  img{
-    width:100%;
-    height:100px;
-    object-fit:contain;
-    border:5px inset blue;
-  }
-  div{
-    width:100%;
-    background:linear-gradient(to right,cyan,blue);
-    object-fit:contain;
-    border:5px ridge black;
-    border-radius:10%;
-  }
-  div:hover{
-    transform: scale(1.1);
-    border-color:white;
-  }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>100K Skills Master Plan</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg,#0f2027,#2c5364);
+  color: white;
+}
+
+/* HEADER */
+header {
+  text-align: center;
+  padding: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* GRID */
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+/* CARD */
+.card {
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  transition: 0.3s;
+  cursor: pointer;
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.05);
+  background: rgba(255,255,255,0.2);
+}
+
+/* BUTTON */
+button {
+  margin-top: 10px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 20px;
+  background: cyan;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: white;
+}
+
+/* IMAGE */
+.banner {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+</style>
+
 </head>
 <body>
-  <img src="image-1.jpg">
-  <div>
-    <h2>10TH CLASS</h2>
-    <h4>SUBJECTS:</h4>
-    <p>LANGUAGES,MATHS,SCIENCE,SOCIAL</p>
+
+<img src="image-1.jpg" class="banner">
+
+<header>🎯 100K Skills Master Plan</header>
+
+<div class="container">
+
+  <div class="card">
+    <h3>💻 Technology & Computing</h3>
+    <p>Programming, AI, Web, Apps</p>
+    <button onclick="openDomain('tech')">Enter</button>
   </div>
-  <div>
-    <h2>9TH CLASS</h2>
-    <h4>SUBJECTS:</h4><p>LANGUAGES,MATHS,SCIENCE,SOCIAL</p>
+
+  <div class="card">
+    <h3>📊 Science & Mathematics</h3>
+    <p>Physics, Chemistry, Maths</p>
+    <button onclick="openDomain('science')">Enter</button>
   </div>
-  <div>
-    <h2>8TH CLASS</h2>
-    <h4>SUBJECTS:</h4><p>LANGUAGES,MATHS,SCIENCE,SOCIAL</p>
+
+  <div class="card">
+    <h3>💰 Business & Finance</h3>
+    <p>Marketing, Trading, Startups</p>
+    <button onclick="openDomain('business')">Enter</button>
   </div>
-  <div>
-    <h2>7TH CLASS</h2>
-    <h4>SUBJECTS:</h4><p>LANGUAGES,MATHS,SCIENCE,SOCIAL</p>
+
+  <div class="card">
+    <h3>🏗 Engineering & Industry</h3>
+    <p>Core Engineering Skills</p>
+    <button onclick="openDomain('engineering')">Enter</button>
   </div>
-    <div>
-    <h2>6TH CLASS</h2>
-    <h4>SUBJECTS:</h4>
-    <p>LANGUAGES,MATHS,SCIENCE,SOCIAL</p>
+
+  <div class="card">
+    <h3>🎨 Creativity & Design</h3>
+    <p>UI/UX, Graphics, 3D</p>
+    <button onclick="openDomain('design')">Enter</button>
   </div>
-  <div>
-    <h2>5TH CLASS</h2>
-    <h4>SUBJECTS:</h4><p>LANGUAGES,MATHS,SCIENCE,SOCIAL</p>
+
+  <div class="card">
+    <h3>🌍 Humanities & Social</h3>
+    <p>History, Politics, Society</p>
+    <button onclick="openDomain('humanities')">Enter</button>
   </div>
-  <div>
-    <h2>4TH CLASS</h2>
-    <h4>SUBJECTS:</h4><p>LANGUAGES,MATHS,SCIENCE,SOCIAL</p>
+
+  <div class="card">
+    <h3>🚀 Personal Growth</h3>
+    <p>Communication, Mindset</p>
+    <button onclick="openDomain('growth')">Enter</button>
   </div>
-  <div>
-    <h2>3RD CLASS</h2>
-    <h4>SUBJECTS:</h4><p>LANGUAGES,MATHS,SCIENCE,SOCIAL</p>
+
+  <div class="card">
+    <h3>🏥 Health & Medicine</h3>
+    <p>Fitness, Medical Basics</p>
+    <button onclick="openDomain('health')">Enter</button>
   </div>
-  <div>
-    <h2>2ND CLASS</h2>
-    <h4>SUBJECTS:</h4><p>LANGUAGES,MATHS,SCIENCE,SOCIAL</p>
+
+  <div class="card">
+    <h3>🏡 Lifestyle Skills</h3>
+    <p>Daily Life, Productivity</p>
+    <button onclick="openDomain('life')">Enter</button>
   </div>
-  <div>
-    <h2>1ST CLASS</h2>
-    <h4>SUBJECTS:</h4><p>LANGUAGES,MATHS,SCIENCE,SOCIAL</p>
+
+  <div class="card">
+    <h3>🤖 Future Fields</h3>
+    <p>AI, Space, Robotics</p>
+    <button onclick="openDomain('future')">Enter</button>
   </div>
+
+</div>
+
+<script>
+function openDomain(domain) {
+  alert("Opening " + domain + " domain 🚀");
+  // later you can redirect like:
+  // window.location.href = domain + ".html";
+}
+</script>
+
 </body>
 </html>
