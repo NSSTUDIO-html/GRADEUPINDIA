@@ -1,106 +1,144 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tech Domains UI</title>
-
-<style>
-  body {
+<title>Tech Domains UI</title><style>
+  * {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
     font-family: 'Segoe UI', sans-serif;
     background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
     color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
   }
 
-  h1 {
-    margin: 20px;
-    font-size: 2rem;
+  header {
     text-align: center;
+    padding: 30px 20px;
+  }
+
+  header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+
+  header p {
+    opacity: 0.7;
   }
 
   .container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
+    gap: 25px;
     padding: 20px;
     width: 90%;
+    margin: auto;
     max-width: 1200px;
   }
 
-  .btn {
-    padding: 20px;
-    border-radius: 15px;
-    background: linear-gradient(135deg, #1e3c72, #2a5298);
-    box-shadow: 0 8px 15px rgba(0,0,0,0.3);
-    cursor: pointer;
-    transition: 0.3s;
-    text-align: center;
-    font-size: 1rem;
-  }
-
-  .btn:hover {
-    transform: translateY(-8px) scale(1.03);
-    background: linear-gradient(135deg, #ff512f, #dd2476);
-    box-shadow: 0 12px 20px rgba(0,0,0,0.5);
-  }
-
-  .btn span {
+  .card {
+    text-decoration: none;
+    color: white;
+    padding: 25px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    transition: all 0.4s ease;
     display: block;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .card::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, transparent, rgba(255,255,255,0.2), transparent);
+    top: 0;
+    left: -100%;
+    transition: 0.5s;
+  }
+
+  .card:hover::before {
+    left: 100%;
+  }
+
+  .card:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.6);
+  }
+
+  .card h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+
+  .card span {
     font-size: 0.9rem;
     opacity: 0.8;
-    margin-top: 8px;
   }
 
-</style>
-</head>
+  footer {
+    text-align: center;
+    padding: 20px;
+    opacity: 0.6;
+    font-size: 0.9rem;
+  }
 
-<body>
-
-<h1>🚀 Tech Domains</h1>
-
-<div class="container">
-
- <div class="btn">
-   <a href="PSD.html">
-   Programming & Software Development
-   </a>
-   <span>Build apps & tools</span></div>
-
-
-
-<div class="btn">Web Development<span>Create websites & web apps</span></div>
-
-<div class="btn">Mobile App Development<span>Android, iOS apps</span></div>
-
-<div class="btn">AI & Machine Learning<span>Smart systems</span></div>
-
-<div class="btn">Data Science & Big Data<span>Data analysis</span></div>
-
-<div class="btn">Cloud & DevOps<span>Deploy & scale apps</span></div>
-
-<div class="btn">Cybersecurity<span>Protect systems</span></div>
-
-<div class="btn">Blockchain & Web3<span>Crypto & dApps</span></div>
-
-<div class="btn">Game Development<span>Create games</span></div>
-
-<div class="btn">AR & VR<span>Immersive tech</span></div>
-
-<div class="btn">Robotics<span>Automation systems</span></div>
-
-<div class="btn">IoT<span>Smart devices</span></div>
-
-<div class="btn">Hardware & Electronics<span>Computer parts</span></div>
-
-<div class="btn">Networking<span>Internet systems</span></div>
-
-<div class="btn">Operating Systems<span>Linux, Windows</span></div>
-
-</div>
-
-</body>
+</style></head><body><header>
+  <h1>🚀 Tech Domains</h1>
+  <p>Select a domain to explore skills and careers</p>
+</header><div class="container">  <a href="PSD.html" class="card">
+    <h2>💻 Programming & Software Development</h2>
+    <span>Build apps & tools</span>
+  </a>  <a href="#" class="card">
+    <h2>🌐 Web Development</h2>
+    <span>Create websites & web apps</span>
+  </a>  <a href="#" class="card">
+    <h2>📱 Mobile App Development</h2>
+    <span>Android & iOS apps</span>
+  </a>  <a href="#" class="card">
+    <h2>🤖 AI & Machine Learning</h2>
+    <span>Smart systems</span>
+  </a>  <a href="#" class="card">
+    <h2>📊 Data Science & Big Data</h2>
+    <span>Data analysis</span>
+  </a>  <a href="#" class="card">
+    <h2>☁️ Cloud & DevOps</h2>
+    <span>Deploy & scale apps</span>
+  </a>  <a href="#" class="card">
+    <h2>🔐 Cybersecurity</h2>
+    <span>Protect systems</span>
+  </a>  <a href="#" class="card">
+    <h2>⛓️ Blockchain & Web3</h2>
+    <span>Crypto & dApps</span>
+  </a>  <a href="#" class="card">
+    <h2>🎮 Game Development</h2>
+    <span>Create games</span>
+  </a>  <a href="#" class="card">
+    <h2>🕶️ AR & VR</h2>
+    <span>Immersive tech</span>
+  </a>  <a href="#" class="card">
+    <h2>🤖 Robotics</h2>
+    <span>Automation systems</span>
+  </a>  <a href="#" class="card">
+    <h2>📡 IoT</h2>
+    <span>Smart devices</span>
+  </a>  <a href="#" class="card">
+    <h2>🔌 Hardware & Electronics</h2>
+    <span>Computer parts</span>
+  </a>  <a href="#" class="card">
+    <h2>🌍 Networking</h2>
+    <span>Internet systems</span>
+  </a>  <a href="#" class="card">
+    <h2>💿 Operating Systems</h2>
+    <span>Linux, Windows</span>
+  </a></div><footer>
+  © 2026 Tech Domains UI | Modern Glass UI Design
+</footer></body>
 </html>
