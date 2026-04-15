@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Skills</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+  <style>
+    body {
+      background: radial-gradient(circle at top, #0f172a, #020617);
+    }
+  </style>
+</head>
+
+<body class="text-white font-sans">
+
+  <!-- HEADER -->
+  <div class="text-center py-10">
+    <h1 class="text-4xl font-bold tracking-wide">✨ My Skills</h1>
+    <div class="w-32 h-1 bg-cyan-400 mx-auto mt-3 rounded-full"></div>
+  </div>
+
+  <!-- CONTAINER -->
+  <div class="max-w-6xl mx-auto px-4 space-y-14">
+
+    <!-- FRONTEND -->
+    <section>
+      <h2 class="text-center text-2xl font-semibold mb-6 text-cyan-300">Frontend</h2>
+
+      <div class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 gap-6">
+
+        <!-- Button -->
+        <div class="skill-btn bg-orange-500"><i class="fab fa-html5"></i><span>HTML</span></div>
+        <div class="skill-btn bg-blue-500"><i class="fab fa-css3-alt"></i><span>CSS</span></div>
+        <div class="skill-btn bg-yellow-400 text-black"><i class="fab fa-js"></i><span>JS</span></div>
+        <div class="skill-btn bg-cyan-400 text-black"><i class="fab fa-react"></i><span>React</span></div>
+        <div class="skill-btn bg-indigo-500"><i class="fas fa-bolt"></i><span>Three.js</span></div>
+        <div class="skill-btn bg-sky-400 text-black"><span>Tailwind</span></div>
+
+      </div>
+    </section>
+
+    <!-- BACKEND -->
+    <section>
+      <h2 class="text-center text-2xl font-semibold mb-6 text-green-300">Backend</h2>
+
+      <div class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 gap-6">
+
+        <div class="skill-btn bg-green-600"><i class="fab fa-node-js"></i><span>Node</span></div>
+        <div class="skill-btn bg-gray-600"><span>Express</span></div>
+        <div class="skill-btn bg-yellow-500 text-black"><i class="fab fa-python"></i><span>Python</span></div>
+        <div class="skill-btn bg-green-800"><span>Django</span></div>
+        <div class="skill-btn bg-red-600"><i class="fab fa-java"></i><span>Java</span></div>
+        <div class="skill-btn bg-blue-700"><span>MySQL</span></div>
+
+      </div>
+    </section>
+
+    <!-- TOOLS -->
+    <section>
+      <h2 class="text-center text-2xl font-semibold mb-6 text-purple-300">Tools</h2>
+
+      <div class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 gap-6">
+
+        <div class="skill-btn bg-blue-600"><i class="fas fa-code"></i><span>VS Code</span></div>
+        <div class="skill-btn bg-green-500 text-black"><span>PyCharm</span></div>
+        <div class="skill-btn bg-red-500"><span>Office</span></div>
+        <div class="skill-btn bg-orange-600"><i class="fab fa-git-alt"></i><span>Git</span></div>
+        <div class="skill-btn bg-gray-800"><i class="fab fa-github"></i><span>GitHub</span></div>
+        <div class="skill-btn bg-white text-black"><span>Vercel</span></div>
+
+      </div>
+    </section>
+
+  </div>
+
+  <!-- STYLES -->
+  <style>
+    .skill-btn {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 18px;
+      border-radius: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 0 15px rgba(0,255,255,0.15);
+    }
+
+    .skill-btn i {
+      font-size: 28px;
+      margin-bottom: 8px;
+    }
+
+    .skill-btn:hover {
+      transform: translateY(-8px) scale(1.05);
+      box-shadow: 0 0 25px rgba(0,255,255,0.6);
+    }
+  </style>
+
+</body>
+</html>
