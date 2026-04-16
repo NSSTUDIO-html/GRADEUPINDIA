@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Scikit-learn Guide</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gradient-to-br from-black to-cyan-900 text-white font-sans">
+
+<header class="text-center py-8 bg-black/40">
+  <h1 class="text-4xl font-bold">Scikit-learn Guide 🤖📊</h1>
+  <p class="text-gray-300">Machine Learning with Python</p>
+</header>
+
+<div class="max-w-6xl mx-auto p-6 space-y-6">
+
+  <!-- INTRO -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">1. What is Scikit-learn?</h2>
+    <p class="text-gray-300">
+      Scikit-learn is a Python library used to build machine learning models like prediction, classification, and clustering.
+    </p>
+  </div>
+
+  <!-- INSTALL -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">2. Installation</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+pip install scikit-learn
+</pre>
+  </div>
+
+  <!-- IMPORT -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">3. Import</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LinearRegression
+</pre>
+  </div>
+
+  <!-- DATASET -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">4. Sample Dataset</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+X = [[1], [2], [3], [4]]
+y = [2, 4, 6, 8]
+</pre>
+  </div>
+
+  <!-- SPLIT -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">5. Train-Test Split</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+X_train, X_test, y_train, y_test =
+train_test_split(X, y, test_size=0.2)
+</pre>
+  </div>
+
+  <!-- MODEL -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">6. Train Model</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+model = LinearRegression()
+model.fit(X_train, y_train)
+</pre>
+  </div>
+
+  <!-- PREDICT -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">7. Prediction</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+prediction = model.predict([[5]])
+print(prediction)
+</pre>
+  </div>
+
+  <!-- TYPES -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">8. Types of ML</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+- Regression (predict numbers)
+- Classification (predict categories)
+- Clustering (group data)
+</pre>
+  </div>
+
+  <!-- ALGORITHMS -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">9. Algorithms</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+- Linear Regression
+- Logistic Regression
+- Decision Tree
+- KNN
+- SVM
+</pre>
+  </div>
+
+  <!-- USE CASES -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">10. Real Use Cases</h2>
+
+    <ul class="list-disc ml-5 text-gray-300">
+      <li>Price prediction 📈</li>
+      <li>Spam detection 📧</li>
+      <li>Recommendation systems 🎯</li>
+      <li>Fraud detection 🔐</li>
+    </ul>
+  </div>
+
+</div>
+
+<footer class="text-center py-6 bg-black/40 mt-8">
+  <p class="text-gray-400">Scikit-learn Learning 🤖📊</p>
+</footer>
+
+</body>
+</html>

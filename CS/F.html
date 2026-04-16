@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Firewalls Guide</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gradient-to-br from-black to-red-900 text-white font-sans">
+
+<header class="text-center py-8 bg-black/40">
+  <h1 class="text-4xl font-bold">Firewalls Guide 🔥🛡️</h1>
+  <p class="text-gray-300">Control Network Traffic</p>
+</header>
+
+<div class="max-w-6xl mx-auto p-6 space-y-6">
+
+  <!-- INTRO -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">1. What is a Firewall?</h2>
+    <p class="text-gray-300">
+      A firewall is a security system that monitors and controls incoming and outgoing network traffic.
+    </p>
+  </div>
+
+  <!-- TYPES -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">2. Types of Firewalls</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+Network Firewall → Protects entire network
+Host Firewall → Protects single system
+Cloud Firewall → Used in AWS/GCP
+</pre>
+  </div>
+
+  <!-- RULES -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">3. Rules</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+Allow → Permit traffic
+Deny → Block traffic
+Port-based filtering
+IP-based filtering
+</pre>
+  </div>
+
+  <!-- EXAMPLE -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">4. Example</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+Allow 80 → Website
+Allow 443 → HTTPS
+Block others
+</pre>
+  </div>
+
+  <!-- LINUX -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">5. Linux Firewall (UFW)</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+sudo ufw enable
+sudo ufw allow 22
+sudo ufw allow 80
+sudo ufw status
+</pre>
+  </div>
+
+  <!-- BENEFITS -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">6. Benefits</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+- Prevent unauthorized access
+- Protect servers
+- Control traffic
+</pre>
+  </div>
+
+  <!-- USE CASES -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">7. Real Use Cases</h2>
+
+    <ul class="list-disc ml-5 text-gray-300">
+      <li>Server security 🖥️</li>
+      <li>Cloud protection ☁️</li>
+      <li>Enterprise networks 🏢</li>
+      <li>Web applications 🌐</li>
+    </ul>
+  </div>
+
+</div>
+
+<footer class="text-center py-6 bg-black/40 mt-8">
+  <p class="text-gray-400">Firewalls 🔥🛡️</p>
+</footer>
+
+</body>
+</html>

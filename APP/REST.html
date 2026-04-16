@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>REST API Guide</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gradient-to-br from-black to-blue-900 text-white font-sans">
+
+<header class="text-center py-8 bg-black/40">
+  <h1 class="text-4xl font-bold">REST API Complete Guide 🌐</h1>
+  <p class="text-gray-300">Backend Communication System</p>
+</header>
+
+<div class="max-w-6xl mx-auto p-6 space-y-6">
+
+  <!-- INTRO -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">1. What is REST API?</h2>
+    <p class="text-gray-300">
+      REST API is a way for frontend apps (React, Android, Flutter) to communicate with backend servers using HTTP requests.
+    </p>
+  </div>
+
+  <!-- HTTP METHODS -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">2. HTTP Methods</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+GET    → Read data
+POST   → Create data
+PUT    → Update data
+DELETE → Remove data
+</pre>
+  </div>
+
+  <!-- EXAMPLE -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">3. Example API</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+GET https://api.example.com/users
+POST https://api.example.com/login
+</pre>
+  </div>
+
+  <!-- NODE EXAMPLE -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">4. Node.js REST API</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+const express = require('express');
+const app = express();
+
+app.use(express.json());
+
+app.get('/users', (req, res) => {
+    res.json([{ name: "Sasank" }]);
+});
+
+app.post('/login', (req, res) => {
+    res.json({ message: "Login Success" });
+});
+
+app.listen(3000);
+</pre>
+  </div>
+
+  <!-- FRONTEND CALL -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">5. Frontend API Call (JavaScript)</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+fetch("https://api.example.com/users")
+  .then(res => res.json())
+  .then(data => console.log(data));
+</pre>
+  </div>
+
+  <!-- REACT -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">6. React API Example</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+useEffect(() => {
+  fetch("/api/users")
+    .then(res => res.json())
+    .then(data => setUsers(data));
+}, []);
+</pre>
+  </div>
+
+  <!-- ANDROID -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">7. Android API (Kotlin)</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+Retrofit:
+- Used for API calls
+- Convert JSON → Kotlin objects
+</pre>
+  </div>
+
+  <!-- FLUTTER -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">8. Flutter API Example</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+import 'package:http/http.dart' as http;
+
+var response = await http.get(Uri.parse("https://api.com/users"));
+print(response.body);
+</pre>
+  </div>
+
+  <!-- FLOW -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">9. How REST API Works</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+Frontend → sends request
+Backend  → processes data
+Database → stores data
+Response → returns JSON
+</pre>
+  </div>
+
+  <!-- JSON -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">10. JSON Format</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+{
+  "name": "Sasank",
+  "role": "Developer"
+}
+</pre>
+  </div>
+
+  <!-- PROJECTS -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">11. Real Projects</h2>
+
+    <ul class="list-disc ml-5 text-gray-300">
+      <li>Login System 🔐</li>
+      <li>Blog App 📝</li>
+      <li>Chat App 💬</li>
+      <li>Weather App 🌦️</li>
+    </ul>
+  </div>
+
+</div>
+
+<footer class="text-center py-6 bg-black/40 mt-8">
+  <p class="text-gray-400">REST API Learning 🌐</p>
+</footer>
+
+</body>
+</html>

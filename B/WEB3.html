@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Web3.js Guide</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gradient-to-br from-black to-cyan-900 text-white font-sans">
+
+<header class="text-center py-8 bg-black/40">
+  <h1 class="text-4xl font-bold">Web3.js 🌐⛓️</h1>
+  <p class="text-gray-300">Connect Web Apps to Blockchain</p>
+</header>
+
+<div class="max-w-6xl mx-auto p-6 space-y-6">
+
+  <!-- INTRO -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">1. What is Web3.js?</h2>
+    <p class="text-gray-300">
+      Web3.js is a JavaScript library that allows web applications to interact with the Ethereum blockchain.
+    </p>
+  </div>
+
+  <!-- PURPOSE -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">2. Why Web3.js?</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+Frontend (React / HTML) → Web3.js → Ethereum Blockchain
+</pre>
+  </div>
+
+  <!-- FEATURES -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">3. Key Features</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+Send transactions
+Read blockchain data
+Interact with smart contracts
+Connect wallets (MetaMask)
+</pre>
+  </div>
+
+  <!-- INSTALL -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">4. Installation</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+npm install web3
+</pre>
+  </div>
+
+  <!-- CONNECTION -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">5. Connect to Ethereum</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+import Web3 from "web3";
+
+const web3 = new Web3(window.ethereum);
+await window.ethereum.request({ method: "eth_requestAccounts" });
+</pre>
+  </div>
+
+  <!-- READ DATA -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">6. Read Blockchain Data</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+const balance = await web3.eth.getBalance(address);
+console.log(balance);
+</pre>
+  </div>
+
+  <!-- SEND TX -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">7. Send Transaction</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+web3.eth.sendTransaction({
+  from: account,
+  to: receiver,
+  value: web3.utils.toWei("0.01", "ether")
+});
+</pre>
+  </div>
+
+  <!-- SMART CONTRACT -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">8. Smart Contract Interaction</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+contract.methods.setData(10).send({ from: account });
+
+contract.methods.getData().call();
+</pre>
+  </div>
+
+  <!-- USE CASES -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">9. Use Cases</h2>
+
+    <ul class="list-disc ml-5 text-gray-300">
+      <li>DApps (Decentralized Apps) 🌐</li>
+      <li>Crypto wallets 💰</li>
+      <li>NFT platforms 🖼️</li>
+      <li>DeFi apps 📊</li>
+    </ul>
+  </div>
+
+</div>
+
+<footer class="text-center py-6 bg-black/40 mt-8">
+  <p class="text-gray-400">Web3.js 🌐⛓️</p>
+</footer>
+
+</body>
+</html>

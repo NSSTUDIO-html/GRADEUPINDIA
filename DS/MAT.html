@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Matplotlib Guide</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gradient-to-br from-black to-green-800 text-white font-sans">
+
+<header class="text-center py-8 bg-black/40">
+  <h1 class="text-4xl font-bold">Matplotlib Guide 📊📈</h1>
+  <p class="text-gray-300">Data Visualization in Python</p>
+</header>
+
+<div class="max-w-6xl mx-auto p-6 space-y-6">
+
+  <!-- INTRO -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">1. What is Matplotlib?</h2>
+    <p class="text-gray-300">
+      Matplotlib is a Python library used to create graphs, charts, and visualizations from data.
+    </p>
+  </div>
+
+  <!-- INSTALL -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">2. Installation</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+pip install matplotlib
+</pre>
+  </div>
+
+  <!-- IMPORT -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">3. Import</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+import matplotlib.pyplot as plt
+</pre>
+  </div>
+
+  <!-- LINE -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">4. Line Chart</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+x = [1,2,3]
+y = [2,4,6]
+
+plt.plot(x, y)
+plt.show()
+</pre>
+  </div>
+
+  <!-- BAR -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">5. Bar Chart</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+plt.bar(["A","B","C"], [10,20,15])
+plt.show()
+</pre>
+  </div>
+
+  <!-- PIE -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">6. Pie Chart</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+plt.pie([30,40,30], labels=["A","B","C"])
+plt.show()
+</pre>
+  </div>
+
+  <!-- SCATTER -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">7. Scatter Plot</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+plt.scatter([1,2,3], [4,5,6])
+plt.show()
+</pre>
+  </div>
+
+  <!-- LABELS -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">8. Labels & Title</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+plt.title("My Chart")
+plt.xlabel("X-axis")
+plt.ylabel("Y-axis")
+</pre>
+  </div>
+
+  <!-- SAVE -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">9. Save Chart</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+plt.savefig("chart.png")
+</pre>
+  </div>
+
+  <!-- USE CASES -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">10. Real Use Cases</h2>
+
+    <ul class="list-disc ml-5 text-gray-300">
+      <li>Data analysis 📊</li>
+      <li>ML visualization 🤖</li>
+      <li>Reports & dashboards 📈</li>
+      <li>Business analytics 💼</li>
+    </ul>
+  </div>
+
+</div>
+
+<footer class="text-center py-6 bg-black/40 mt-8">
+  <p class="text-gray-400">Matplotlib 📊📈</p>
+</footer>
+
+</body>
+</html>

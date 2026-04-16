@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pandas Guide</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gradient-to-br from-black to-purple-900 text-white font-sans">
+
+<header class="text-center py-8 bg-black/40">
+  <h1 class="text-4xl font-bold">Pandas Complete Guide 📊🐼</h1>
+  <p class="text-gray-300">Data Analysis Library for Python</p>
+</header>
+
+<div class="max-w-6xl mx-auto p-6 space-y-6">
+
+  <!-- INTRO -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">1. What is Pandas?</h2>
+    <p class="text-gray-300">
+      Pandas is a Python library used for data analysis, manipulation, and working with structured data like tables (Excel-like data).
+    </p>
+  </div>
+
+  <!-- INSTALL -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">2. Installation</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+pip install pandas
+</pre>
+  </div>
+
+  <!-- IMPORT -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">3. Import Pandas</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+import pandas as pd
+</pre>
+  </div>
+
+  <!-- SERIES -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">4. Series (1D Data)</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+data = [10, 20, 30]
+
+s = pd.Series(data)
+print(s)
+</pre>
+  </div>
+
+  <!-- DATAFRAME -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">5. DataFrame (2D Table)</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+data = {
+  "Name": ["A", "B", "C"],
+  "Age": [20, 21, 22]
+}
+
+df = pd.DataFrame(data)
+print(df)
+</pre>
+  </div>
+
+  <!-- READ CSV -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">6. Read CSV File</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+df = pd.read_csv("data.csv")
+print(df.head())
+</pre>
+  </div>
+
+  <!-- OPERATIONS -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">7. Basic Operations</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+df.head()     # first 5 rows
+df.tail()     # last 5 rows
+df.info()     # summary
+df.describe() # statistics
+</pre>
+  </div>
+
+  <!-- FILTER -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">8. Filtering Data</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+df[df["Age"] > 20]
+</pre>
+  </div>
+
+  <!-- MISSING DATA -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">9. Missing Data</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+df.isnull()
+df.dropna()
+df.fillna(0)
+</pre>
+  </div>
+
+  <!-- USE CASES -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">10. Real Use Cases</h2>
+
+    <ul class="list-disc ml-5 text-gray-300">
+      <li>Data Analysis 📊</li>
+      <li>Machine Learning preprocessing 🤖</li>
+      <li>Excel automation 📁</li>
+      <li>Business analytics 📈</li>
+    </ul>
+  </div>
+
+</div>
+
+<footer class="text-center py-6 bg-black/40 mt-8">
+  <p class="text-gray-400">Pandas Learning 📊🐼</p>
+</footer>
+
+</body>
+</html>

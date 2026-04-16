@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Kubernetes Guide</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gradient-to-br from-black to-purple-900 text-white font-sans">
+
+<header class="text-center py-8 bg-black/40">
+  <h1 class="text-4xl font-bold">Kubernetes Guide ☸️🚀</h1>
+  <p class="text-gray-300">Container Orchestration Platform</p>
+</header>
+
+<div class="max-w-6xl mx-auto p-6 space-y-6">
+
+  <!-- INTRO -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">1. What is Kubernetes?</h2>
+    <p class="text-gray-300">
+      Kubernetes is a system that automates deployment, scaling, and management of containerized applications.
+    </p>
+  </div>
+
+  <!-- WHY -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">2. Why Kubernetes?</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+- Auto scaling
+- Load balancing
+- Self-healing apps
+</pre>
+  </div>
+
+  <!-- COMPONENTS -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">3. Core Components</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+Pod → Smallest unit
+Node → Machine
+Cluster → Group of nodes
+Service → Network access
+</pre>
+  </div>
+
+  <!-- DEPLOYMENT -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">4. Deployment YAML</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: myapp
+spec:
+  replicas: 2
+</pre>
+  </div>
+
+  <!-- COMMANDS -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">5. Commands</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+kubectl apply -f app.yaml
+kubectl get pods
+kubectl delete pod name
+</pre>
+  </div>
+
+  <!-- BENEFITS -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">6. Benefits</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+- High availability
+- Scalability
+- Automation
+</pre>
+  </div>
+
+  <!-- USE CASES -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">7. Real Use Cases</h2>
+
+    <ul class="list-disc ml-5 text-gray-300">
+      <li>Microservices architecture ⚙️</li>
+      <li>Cloud apps ☁️</li>
+      <li>AI/ML deployment 🤖</li>
+      <li>Large-scale systems 🚀</li>
+    </ul>
+  </div>
+
+</div>
+
+<footer class="text-center py-6 bg-black/40 mt-8">
+  <p class="text-gray-400">Kubernetes ☸️🚀</p>
+</footer>
+
+</body>
+</html>

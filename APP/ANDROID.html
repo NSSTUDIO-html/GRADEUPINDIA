@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Android Development Guide</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gradient-to-br from-black to-green-800 text-white font-sans">
+
+<header class="text-center py-8 bg-black/40">
+  <h1 class="text-4xl font-bold">Android Development 📱</h1>
+  <p class="text-gray-300">Build Mobile Apps using Kotlin / Java</p>
+</header>
+
+<div class="max-w-6xl mx-auto p-6 space-y-6">
+
+  <!-- INTRO -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">1. What is Android?</h2>
+    <p class="text-gray-300">
+      Android is a mobile operating system by Google used to build smartphone applications.
+    </p>
+  </div>
+
+  <!-- TOOLS -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">2. Tools Needed</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+- Android Studio
+- Kotlin / Java
+- Emulator or Real Device
+</pre>
+  </div>
+
+  <!-- PROJECT STRUCTURE -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">3. Project Structure</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+app/
+ ├── java/
+ │    └── MainActivity.kt
+ ├── res/
+ │    ├── layout/
+ │    └── values/
+ ├── AndroidManifest.xml
+</pre>
+  </div>
+
+  <!-- MAIN ACTIVITY -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">4. Main Activity (Kotlin)</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+class MainActivity : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+    }
+}
+</pre>
+  </div>
+
+  <!-- UI XML -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">5. UI Design (XML)</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+&lt;TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Hello Android"
+    android:textSize="20sp" /&gt;
+</pre>
+  </div>
+
+  <!-- BUTTON -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">6. Button Click</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+button.setOnClickListener {
+    textView.text = "Button Clicked"
+}
+</pre>
+  </div>
+
+  <!-- INTENT -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">7. Intent (Screen Change)</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+val intent = Intent(this, SecondActivity::class.java)
+startActivity(intent)
+</pre>
+  </div>
+
+  <!-- LAYOUTS -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">8. Layout Types</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+- Linear Layout
+- Constraint Layout
+- Relative Layout
+</pre>
+  </div>
+
+  <!-- DATABASE -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">9. Storage</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+- SQLite
+- Firebase
+- Shared Preferences
+</pre>
+  </div>
+
+  <!-- API -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">10. API Integration</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+Retrofit library:
+- Connect backend
+- Fetch JSON data
+</pre>
+  </div>
+
+  <!-- MINI PROJECT -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">11. Mini Project Ideas</h2>
+
+    <ul class="list-disc ml-5 text-gray-300">
+      <li>To-Do App</li>
+      <li>Calculator App</li>
+      <li>Login App</li>
+      <li>Weather App</li>
+    </ul>
+  </div>
+
+</div>
+
+<footer class="text-center py-6 bg-black/40 mt-8">
+  <p class="text-gray-400">Android Learning 📱</p>
+</footer>
+
+</body>
+</html>

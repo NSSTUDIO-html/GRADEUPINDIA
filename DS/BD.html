@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Big Data Guide</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gradient-to-br from-black to-indigo-800 text-white font-sans">
+
+<header class="text-center py-8 bg-black/40">
+  <h1 class="text-4xl font-bold">Big Data Guide 🚀📊</h1>
+  <p class="text-gray-300">Handling Massive Data Efficiently</p>
+</header>
+
+<div class="max-w-6xl mx-auto p-6 space-y-6">
+
+  <!-- INTRO -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">1. What is Big Data?</h2>
+    <p class="text-gray-300">
+      Big Data refers to extremely large datasets that cannot be processed using traditional tools like Excel or basic Python.
+    </p>
+  </div>
+
+  <!-- 5V -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">2. 5 Vs of Big Data</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+Volume → Huge size
+Velocity → High speed
+Variety → Different types
+Veracity → Data quality
+Value → Useful insights
+</pre>
+  </div>
+
+  <!-- TOOLS -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">3. Tools</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+- Hadoop
+- Spark
+- Hive
+- Kafka
+</pre>
+  </div>
+
+  <!-- HADOOP -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">4. Hadoop</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+Distributed storage (HDFS)
+Processes large data in clusters
+</pre>
+  </div>
+
+  <!-- SPARK -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">5. Apache Spark</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+Fast processing engine
+Supports Python (PySpark)
+</pre>
+  </div>
+
+  <!-- PYSPARK -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">6. PySpark Example</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+from pyspark.sql import SparkSession
+
+spark = SparkSession.builder.appName("Test").getOrCreate()
+
+df = spark.read.csv("data.csv", header=True)
+df.show()
+</pre>
+  </div>
+
+  <!-- PIPELINE -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">7. Data Pipeline</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+Data → Storage → Processing → Analysis → Visualization
+</pre>
+  </div>
+
+  <!-- USE CASES -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">8. Real Use Cases</h2>
+
+    <ul class="list-disc ml-5 text-gray-300">
+      <li>Social media data 📱</li>
+      <li>Banking systems 💰</li>
+      <li>E-commerce analytics 🛒</li>
+      <li>Streaming data (real-time) 🎥</li>
+    </ul>
+  </div>
+
+</div>
+
+<footer class="text-center py-6 bg-black/40 mt-8">
+  <p class="text-gray-400">Big Data 🚀📊</p>
+</footer>
+
+</body>
+</html>

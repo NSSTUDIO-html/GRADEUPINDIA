@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SQLite Guide</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gradient-to-br from-black to-emerald-900 text-white font-sans">
+
+<header class="text-center py-8 bg-black/40">
+  <h1 class="text-4xl font-bold">SQLite Complete Guide 🗄️</h1>
+  <p class="text-gray-300">Lightweight Database for Apps</p>
+</header>
+
+<div class="max-w-6xl mx-auto p-6 space-y-6">
+
+  <!-- INTRO -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">1. What is SQLite?</h2>
+    <p class="text-gray-300">
+      SQLite is a lightweight, serverless database used in Android, iOS, and small applications.
+    </p>
+  </div>
+
+  <!-- FEATURES -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">2. Features</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+- No server needed
+- Fast and lightweight
+- Stored in a single file
+- Used in mobile apps
+</pre>
+  </div>
+
+  <!-- CREATE TABLE -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">3. Create Table</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+CREATE TABLE users (
+  id INTEGER PRIMARY KEY,
+  name TEXT,
+  age INTEGER
+);
+</pre>
+  </div>
+
+  <!-- INSERT -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">4. Insert Data</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+INSERT INTO users (name, age)
+VALUES ('Sasank', 18);
+</pre>
+  </div>
+
+  <!-- SELECT -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">5. Read Data</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+SELECT * FROM users;
+</pre>
+  </div>
+
+  <!-- UPDATE -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">6. Update Data</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+UPDATE users
+SET age = 20
+WHERE name = 'Sasank';
+</pre>
+  </div>
+
+  <!-- DELETE -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">7. Delete Data</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+DELETE FROM users
+WHERE id = 1;
+</pre>
+  </div>
+
+  <!-- ANDROID -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">8. SQLite in Android</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+Used for:
+- Local storage
+- Offline apps
+- Notes apps
+</pre>
+  </div>
+
+  <!-- FLUTTER -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">9. SQLite in Flutter</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+package: sqflite
+
+Used for:
+- Store offline data
+- Save user tasks
+</pre>
+  </div>
+
+  <!-- USE CASES -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">10. Real Use Cases</h2>
+
+    <ul class="list-disc ml-5 text-gray-300">
+      <li>To-Do apps 📋</li>
+      <li>Notes apps 📝</li>
+      <li>Offline mobile apps 📱</li>
+      <li>Small desktop apps 💻</li>
+    </ul>
+  </div>
+
+</div>
+
+<footer class="text-center py-6 bg-black/40 mt-8">
+  <p class="text-gray-400">SQLite Learning 🗄️</p>
+</footer>
+
+</body>
+</html>

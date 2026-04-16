@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dart Guide</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gradient-to-br from-black to-teal-900 text-white font-sans">
+
+<header class="text-center py-8 bg-black/40">
+  <h1 class="text-4xl font-bold">Dart Complete Guide 🎯</h1>
+  <p class="text-gray-300">Programming Language for Flutter</p>
+</header>
+
+<div class="max-w-6xl mx-auto p-6 space-y-6">
+
+  <!-- INTRO -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">1. What is Dart?</h2>
+    <p class="text-gray-300">
+      Dart is a programming language developed by Google and used to build Flutter mobile apps.
+    </p>
+  </div>
+
+  <!-- BASIC -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">2. Hello World</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+void main() {
+  print("Hello Dart");
+}
+</pre>
+  </div>
+
+  <!-- VARIABLES -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">3. Variables</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+int age = 18;
+String name = "Sasank";
+double price = 99.5;
+bool isActive = true;
+</pre>
+  </div>
+
+  <!-- CONST VS VAR -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">4. final vs const</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+final name = "Static value";
+const pi = 3.14;
+</pre>
+  </div>
+
+  <!-- CONDITIONS -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">5. If-Else</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+int age = 18;
+
+if(age >= 18){
+  print("Adult");
+} else {
+  print("Minor");
+}
+</pre>
+  </div>
+
+  <!-- LOOPS -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">6. Loops</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+for(int i = 0; i < 5; i++){
+  print(i);
+}
+</pre>
+  </div>
+
+  <!-- FUNCTIONS -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">7. Functions</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+int add(int a, int b) {
+  return a + b;
+}
+</pre>
+  </div>
+
+  <!-- LISTS -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">8. Lists (Arrays)</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+List<int> numbers = [1, 2, 3];
+
+for(var n in numbers){
+  print(n);
+}
+</pre>
+  </div>
+
+  <!-- MAP -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">9. Maps (Key-Value)</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+Map<String, String> user = {
+  "name": "Sasank",
+  "role": "Developer"
+};
+</pre>
+  </div>
+
+  <!-- OOP -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">10. OOP in Dart</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+class Car {
+  String model;
+
+  Car(this.model);
+
+  void drive(){
+    print("Car is running");
+  }
+}
+</pre>
+  </div>
+
+  <!-- FLUTTER LINK -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">11. Dart + Flutter Connection</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+Dart → Logic
+Flutter → UI
+
+Together = Mobile Apps 📱
+</pre>
+  </div>
+
+  <!-- MINI PROJECT -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">12. Mini Projects</h2>
+
+    <ul class="list-disc ml-5 text-gray-300">
+      <li>Calculator App 🧮</li>
+      <li>Todo App 📋</li>
+      <li>Login App 🔐</li>
+      <li>Weather App 🌦️</li>
+    </ul>
+  </div>
+
+</div>
+
+<footer class="text-center py-6 bg-black/40 mt-8">
+  <p class="text-gray-400">Dart Learning 🎯</p>
+</footer>
+
+</body>
+</html>

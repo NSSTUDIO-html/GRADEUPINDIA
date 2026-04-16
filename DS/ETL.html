@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ETL Guide</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gradient-to-br from-black to-teal-800 text-white font-sans">
+
+<header class="text-center py-8 bg-black/40">
+  <h1 class="text-4xl font-bold">ETL Guide ⚙️📊</h1>
+  <p class="text-gray-300">Extract • Transform • Load</p>
+</header>
+
+<div class="max-w-6xl mx-auto p-6 space-y-6">
+
+  <!-- INTRO -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">1. What is ETL?</h2>
+    <p class="text-gray-300">
+      ETL is a process used to collect data from sources, clean/transform it, and load it into a database or data warehouse.
+    </p>
+  </div>
+
+  <!-- STEPS -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">2. ETL Steps</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+Extract → Get data (CSV, API, DB)
+Transform → Clean & process
+Load → Store in database
+</pre>
+  </div>
+
+  <!-- EXTRACT -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">3. Extract (Python)</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+import pandas as pd
+
+df = pd.read_csv("data.csv")
+</pre>
+  </div>
+
+  <!-- TRANSFORM -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">4. Transform</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+df.dropna(inplace=True)
+df["salary"] = df["salary"] * 1.1
+</pre>
+  </div>
+
+  <!-- LOAD -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">5. Load (SQL)</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+import sqlite3
+
+conn = sqlite3.connect("data.db")
+df.to_sql("table", conn)
+</pre>
+  </div>
+
+  <!-- TOOLS -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">6. ETL Tools</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+- Apache Airflow
+- Talend
+- Informatica
+- AWS Glue
+</pre>
+  </div>
+
+  <!-- PIPELINE -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">7. Data Pipeline</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+Source → ETL → Database → Dashboard
+</pre>
+  </div>
+
+  <!-- USE CASES -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">8. Real Use Cases</h2>
+
+    <ul class="list-disc ml-5 text-gray-300">
+      <li>Data warehousing 📊</li>
+      <li>Business analytics 💼</li>
+      <li>Real-time pipelines ⚡</li>
+      <li>ML data preparation 🤖</li>
+    </ul>
+  </div>
+
+</div>
+
+<footer class="text-center py-6 bg-black/40 mt-8">
+  <p class="text-gray-400">ETL ⚙️📊</p>
+</footer>
+
+</body>
+</html>

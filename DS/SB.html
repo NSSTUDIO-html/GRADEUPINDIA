@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Seaborn Guide</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gradient-to-br from-black to-blue-900 text-white font-sans">
+
+<header class="text-center py-8 bg-black/40">
+  <h1 class="text-4xl font-bold">Seaborn Guide 📊🎨</h1>
+  <p class="text-gray-300">Advanced Data Visualization</p>
+</header>
+
+<div class="max-w-6xl mx-auto p-6 space-y-6">
+
+  <!-- INTRO -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">1. What is Seaborn?</h2>
+    <p class="text-gray-300">
+      Seaborn is a Python library for creating beautiful and statistical data visualizations.
+    </p>
+  </div>
+
+  <!-- INSTALL -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">2. Installation</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+pip install seaborn
+</pre>
+  </div>
+
+  <!-- IMPORT -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">3. Import</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+import seaborn as sns
+import matplotlib.pyplot as plt
+</pre>
+  </div>
+
+  <!-- DATA -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">4. Sample Dataset</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+data = sns.load_dataset("tips")
+print(data.head())
+</pre>
+  </div>
+
+  <!-- SCATTER -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">5. Scatter Plot</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+sns.scatterplot(x="total_bill", y="tip", data=data)
+plt.show()
+</pre>
+  </div>
+
+  <!-- BAR -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">6. Bar Plot</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+sns.barplot(x="day", y="total_bill", data=data)
+plt.show()
+</pre>
+  </div>
+
+  <!-- HIST -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">7. Histogram</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+sns.histplot(data["total_bill"])
+plt.show()
+</pre>
+  </div>
+
+  <!-- HEATMAP -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">8. Heatmap</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+corr = data.corr()
+sns.heatmap(corr, annot=True)
+plt.show()
+</pre>
+  </div>
+
+  <!-- STYLE -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">9. Styling</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+sns.set_style("darkgrid")
+</pre>
+  </div>
+
+  <!-- USE CASES -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">10. Real Use Cases</h2>
+
+    <ul class="list-disc ml-5 text-gray-300">
+      <li>Data analysis 📊</li>
+      <li>ML insights 🤖</li>
+      <li>Correlation analysis 🔗</li>
+      <li>Business reports 📈</li>
+    </ul>
+  </div>
+
+</div>
+
+<footer class="text-center py-6 bg-black/40 mt-8">
+  <p class="text-gray-400">Seaborn 📊🎨</p>
+</footer>
+
+</body>
+</html>

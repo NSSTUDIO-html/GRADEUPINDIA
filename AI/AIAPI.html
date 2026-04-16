@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI API Guide</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gradient-to-br from-black to-indigo-900 text-white font-sans">
+
+<header class="text-center py-8 bg-black/40">
+  <h1 class="text-4xl font-bold">AI API Guide 🤖🌐</h1>
+  <p class="text-gray-300">Use AI Models via APIs</p>
+</header>
+
+<div class="max-w-6xl mx-auto p-6 space-y-6">
+
+  <!-- INTRO -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">1. What is an AI API?</h2>
+    <p class="text-gray-300">
+      AI API allows you to use powerful AI models (chat, vision, speech) through HTTP requests without building models from scratch.
+    </p>
+  </div>
+
+  <!-- WORKING -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">2. How it Works</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+User → Your App → API → AI Model → Response
+</pre>
+  </div>
+
+  <!-- EXAMPLE JS -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">3. JavaScript API Example</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+fetch("https://api.example.com/ai", {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json",
+    "Authorization": "Bearer YOUR_API_KEY"
+  },
+  body: JSON.stringify({
+    prompt: "Hello AI"
+  })
+})
+.then(res => res.json())
+.then(data => console.log(data))
+</pre>
+  </div>
+
+  <!-- PYTHON -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">4. Python API Example</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+import requests
+
+url = "https://api.example.com/ai"
+
+response = requests.post(url, json={
+  "prompt": "Hello AI"
+})
+
+print(response.json())
+</pre>
+  </div>
+
+  <!-- TYPES -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">5. Types of AI APIs</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+- Chat APIs (Chatbots)
+- Vision APIs (Image recognition)
+- Speech APIs (Voice)
+- NLP APIs (Text analysis)
+</pre>
+  </div>
+
+  <!-- POPULAR -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">6. Popular AI APIs</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+- OpenAI
+- Google AI
+- Azure AI
+- HuggingFace
+</pre>
+  </div>
+
+  <!-- USE CASES -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">7. Real Use Cases</h2>
+
+    <ul class="list-disc ml-5 text-gray-300">
+      <li>Chatbots 🤖</li>
+      <li>AI assistants 🧠</li>
+      <li>Image generators 🎨</li>
+      <li>Voice apps 🎤</li>
+    </ul>
+  </div>
+
+</div>
+
+<footer class="text-center py-6 bg-black/40 mt-8">
+  <p class="text-gray-400">AI API 🤖🌐</p>
+</footer>
+
+</body>
+</html>

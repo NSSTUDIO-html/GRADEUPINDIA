@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Solidity Guide</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gradient-to-br from-black to-blue-900 text-white font-sans">
+
+<header class="text-center py-8 bg-black/40">
+  <h1 class="text-4xl font-bold">Solidity Guide 🧑‍💻⛓️</h1>
+  <p class="text-gray-300">Smart Contract Programming Language</p>
+</header>
+
+<div class="max-w-6xl mx-auto p-6 space-y-6">
+
+  <!-- INTRO -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">1. What is Solidity?</h2>
+    <p class="text-gray-300">
+      Solidity is a high-level programming language used to write smart contracts on Ethereum blockchain.
+    </p>
+  </div>
+
+  <!-- FEATURES -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">2. Key Features</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+Contract-based language
+Statically typed
+Runs on Ethereum Virtual Machine (EVM)
+</pre>
+  </div>
+
+  <!-- BASIC STRUCTURE -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">3. Basic Structure</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+pragma solidity ^0.8.0;
+
+contract MyContract {
+    uint value;
+}
+</pre>
+  </div>
+
+  <!-- VARIABLES -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">4. Data Types</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+uint → positive numbers
+int → integers
+bool → true/false
+string → text
+address → wallet address
+</pre>
+  </div>
+
+  <!-- FUNCTIONS -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">5. Functions</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+function setValue(uint _value) public {
+    value = _value;
+}
+</pre>
+  </div>
+
+  <!-- EXAMPLE CONTRACT -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">6. Simple Smart Contract Example</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+pragma solidity ^0.8.0;
+
+contract Storage {
+    uint data;
+
+    function set(uint _data) public {
+        data = _data;
+    }
+
+    function get() public view returns (uint) {
+        return data;
+    }
+}
+</pre>
+  </div>
+
+  <!-- KEYWORDS -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">7. Important Keywords</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+public → accessible
+private → restricted
+view → read-only
+pure → no state change
+</pre>
+  </div>
+
+  <!-- USE CASES -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">8. Use Cases</h2>
+
+    <ul class="list-disc ml-5 text-gray-300">
+      <li>DeFi apps 💰</li>
+      <li>NFT platforms 🖼️</li>
+      <li>Voting systems 🗳️</li>
+      <li>Decentralized apps (DApps) 🌐</li>
+    </ul>
+  </div>
+
+</div>
+
+<footer class="text-center py-6 bg-black/40 mt-8">
+  <p class="text-gray-400">Solidity 🧑‍💻⛓️</p>
+</footer>
+
+</body>
+</html>

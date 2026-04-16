@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Deep Learning Guide</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gradient-to-br from-black to-pink-900 text-white font-sans">
+
+<header class="text-center py-8 bg-black/40">
+  <h1 class="text-4xl font-bold">Deep Learning Guide 🤖🧠</h1>
+  <p class="text-gray-300">Neural Networks & AI Intelligence</p>
+</header>
+
+<div class="max-w-6xl mx-auto p-6 space-y-6">
+
+  <!-- INTRO -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">1. What is Deep Learning?</h2>
+    <p class="text-gray-300">
+      Deep Learning is a part of Machine Learning that uses neural networks with multiple layers to learn patterns from data.
+    </p>
+  </div>
+
+  <!-- ML VS DL -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">2. ML vs Deep Learning</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+Machine Learning → Manual feature extraction
+Deep Learning → Automatic feature learning
+</pre>
+  </div>
+
+  <!-- NEURAL NETWORK -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">3. Neural Network Structure</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+Input Layer → Hidden Layers → Output Layer
+</pre>
+  </div>
+
+  <!-- ACTIVATION -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">4. Activation Functions</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+ReLU → max(0, x)
+Sigmoid → 0 to 1
+Softmax → probability output
+</pre>
+  </div>
+
+  <!-- LOSS -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">5. Loss Function</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+Measures error between prediction and actual output
+</pre>
+  </div>
+
+  <!-- BACKPROP -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">6. Backpropagation</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+Algorithm to update weights using error
+</pre>
+  </div>
+
+  <!-- TYPES -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">7. Types of Networks</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+ANN → Basic neural network
+CNN → Image processing
+RNN → Sequence data (text, speech)
+</pre>
+  </div>
+
+  <!-- CODE -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">8. TensorFlow Example</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+import tensorflow as tf
+
+model = tf.keras.Sequential([
+  tf.keras.layers.Dense(10, activation='relu'),
+  tf.keras.layers.Dense(1)
+])
+
+model.compile(optimizer='adam', loss='mse')
+model.fit(X, y, epochs=10)
+</pre>
+  </div>
+
+  <!-- PYTORCH -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">9. PyTorch Example</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+import torch.nn as nn
+
+model = nn.Sequential(
+  nn.Linear(1, 10),
+  nn.ReLU(),
+  nn.Linear(10, 1)
+)
+</pre>
+  </div>
+
+  <!-- USE CASES -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">10. Real Use Cases</h2>
+
+    <ul class="list-disc ml-5 text-gray-300">
+      <li>Image recognition 🖼️</li>
+      <li>Voice assistants 🎤</li>
+      <li>Self-driving cars 🚗</li>
+      <li>ChatGPT-like AI 🤖</li>
+    </ul>
+  </div>
+
+</div>
+
+<footer class="text-center py-6 bg-black/40 mt-8">
+  <p class="text-gray-400">Deep Learning 🤖🧠</p>
+</footer>
+
+</body>
+</html>

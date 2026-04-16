@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>iOS Development Guide</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gradient-to-br from-black to-gray-900 text-white font-sans">
+
+<header class="text-center py-8 bg-black/40">
+  <h1 class="text-4xl font-bold">iOS Development Guide 🍏📱</h1>
+  <p class="text-gray-300">Build iPhone & iPad Apps</p>
+</header>
+
+<div class="max-w-6xl mx-auto p-6 space-y-6">
+
+  <!-- INTRO -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">1. What is iOS?</h2>
+    <p class="text-gray-300">
+      iOS is Apple’s mobile operating system used in iPhones and iPads.
+    </p>
+  </div>
+
+  <!-- TOOLS -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">2. Tools Needed</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+- Mac Computer (required)
+- Xcode (official IDE)
+- Swift programming language
+</pre>
+  </div>
+
+  <!-- XCODE -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">3. What is Xcode?</h2>
+    <p class="text-gray-300">
+      Xcode is Apple’s official IDE used to design UI, write Swift code, and run iOS simulators.
+    </p>
+  </div>
+
+  <!-- APP STRUCTURE -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">4. App Structure</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+App/
+ ├── AppDelegate.swift
+ ├── SceneDelegate.swift
+ ├── ViewController.swift
+ ├── Main.storyboard
+</pre>
+  </div>
+
+  <!-- UI -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">5. UI Design (Storyboard)</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+- Drag & Drop UI
+- Buttons
+- Labels
+- TextFields
+</pre>
+  </div>
+
+  <!-- SWIFT -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">6. ViewController (Swift)</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+import UIKit
+
+class ViewController: UIViewController {
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        print("iOS App Started")
+    }
+}
+</pre>
+  </div>
+
+  <!-- BUTTON -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">7. Button Action</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+@IBAction func buttonTapped(_ sender: UIButton) {
+    print("Button Clicked")
+}
+</pre>
+  </div>
+
+  <!-- NAVIGATION -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">8. Navigation</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+let vc = SecondViewController()
+navigationController?.pushViewController(vc, animated: true)
+</pre>
+  </div>
+
+  <!-- API -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">9. API Integration</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+Use URLSession:
+- Fetch data from server
+- Parse JSON
+- Show in UI
+</pre>
+  </div>
+
+  <!-- STORAGE -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">10. Storage Options</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+- UserDefaults
+- CoreData
+- CloudKit
+</pre>
+  </div>
+
+  <!-- DEPLOYMENT -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">11. App Deployment</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+Steps:
+1. Build app in Xcode
+2. Test in simulator
+3. Upload to App Store Connect
+4. Submit for review
+</pre>
+  </div>
+
+  <!-- PROJECTS -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">12. Project Ideas</h2>
+
+    <ul class="list-disc ml-5 text-gray-300">
+      <li>To-Do App 📋</li>
+      <li>Chat App 💬</li>
+      <li>Weather App 🌦️</li>
+      <li>Fitness App 🏃</li>
+    </ul>
+  </div>
+
+</div>
+
+<footer class="text-center py-6 bg-black/40 mt-8">
+  <p class="text-gray-400">iOS Learning 🍏📱</p>
+</footer>
+
+</body>
+</html>

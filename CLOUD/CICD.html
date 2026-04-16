@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CI/CD Guide</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gradient-to-br from-black to-red-800 text-white font-sans">
+
+<header class="text-center py-8 bg-black/40">
+  <h1 class="text-4xl font-bold">CI/CD Guide 🔄🚀</h1>
+  <p class="text-gray-300">Continuous Integration & Deployment</p>
+</header>
+
+<div class="max-w-6xl mx-auto p-6 space-y-6">
+
+  <!-- INTRO -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">1. What is CI/CD?</h2>
+    <p class="text-gray-300">
+      CI/CD is a process that automates testing, building, and deploying code.
+    </p>
+  </div>
+
+  <!-- CI -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">2. Continuous Integration (CI)</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+- Code pushed to GitHub
+- Run tests automatically
+- Build project
+</pre>
+  </div>
+
+  <!-- CD -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">3. Continuous Deployment (CD)</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+- Deploy to server/cloud
+- Update app automatically
+</pre>
+  </div>
+
+  <!-- PIPELINE -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">4. Pipeline Flow</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+Code → GitHub → CI → Build → Test → Deploy
+</pre>
+  </div>
+
+  <!-- TOOL -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">5. Tools</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+GitHub Actions
+Jenkins
+GitLab CI
+CircleCI
+</pre>
+  </div>
+
+  <!-- EXAMPLE -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">6. GitHub Actions Example</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+name: Deploy App
+
+on: push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+</pre>
+  </div>
+
+  <!-- BENEFITS -->
+  <div class="bg

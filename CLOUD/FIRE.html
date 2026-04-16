@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Firebase Guide</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Firebase CDN -->
+  <script src="https://www.gstatic.com/firebasejs/10.0.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.0.0/firebase-firestore.js"></script>
+</head>
+
+<body class="bg-gradient-to-br from-black to-orange-600 text-white font-sans">
+
+<header class="text-center py-8 bg-black/40">
+  <h1 class="text-4xl font-bold">Firebase Guide 🔥📱</h1>
+  <p class="text-gray-300">Backend as a Service (BaaS)</p>
+</header>
+
+<div class="max-w-6xl mx-auto p-6 space-y-6">
+
+  <!-- INTRO -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">1. What is Firebase?</h2>
+    <p class="text-gray-300">
+      Firebase is a platform by Google that provides backend services like database, authentication, hosting, and more.
+    </p>
+  </div>
+
+  <!-- SERVICES -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">2. Core Services</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+Authentication → Login system
+Firestore → Database
+Hosting → Deploy website
+Storage → Store files
+</pre>
+  </div>
+
+  <!-- CONFIG -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">3. Firebase Setup</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+const firebaseConfig = {
+  apiKey: "YOUR_KEY",
+  authDomain: "YOUR_DOMAIN",
+};
+</pre>
+  </div>
+
+  <!-- INIT -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">4. Initialize App</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+import { initializeApp } from "firebase/app";
+
+const app = initializeApp(firebaseConfig);
+</pre>
+  </div>
+
+  <!-- DATABASE -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">5. Firestore Example</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+import { getFirestore, addDoc, collection } from "firebase/firestore";
+
+const db = getFirestore();
+
+addDoc(collection(db, "users"), {
+  name: "John",
+  age: 20
+});
+</pre>
+  </div>
+
+  <!-- AUTH -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">6. Authentication</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+Email/Password login
+Google login
+OTP login
+</pre>
+  </div>
+
+  <!-- HOST -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">7. Hosting</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+firebase deploy
+</pre>
+  </div>
+
+  <!-- USE CASES -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">8. Real Use Cases</h2>
+
+    <ul class="list-disc ml-5 text-gray-300">
+      <li>Mobile apps 📱</li>
+      <li>Real-time chat apps 💬</li>
+      <li>Authentication systems 🔐</li>
+      <li>Quick MVPs 🚀</li>
+    </ul>
+  </div>
+
+</div>
+
+<footer class="text-center py-6 bg-black/40 mt-8">
+  <p class="text-gray-400">Firebase 🔥📱</p>
+</footer>
+
+</body>
+</html>

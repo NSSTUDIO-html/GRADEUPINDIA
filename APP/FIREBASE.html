@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Firebase Guide</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gradient-to-br from-black to-orange-900 text-white font-sans">
+
+<header class="text-center py-8 bg-black/40">
+  <h1 class="text-4xl font-bold">Firebase Complete Guide 🔥</h1>
+  <p class="text-gray-300">Backend for Web + Mobile Apps</p>
+</header>
+
+<div class="max-w-6xl mx-auto p-6 space-y-6">
+
+  <!-- INTRO -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">1. What is Firebase?</h2>
+    <p class="text-gray-300">
+      Firebase is a Backend-as-a-Service (BaaS) by Google used for authentication, database, hosting, and real-time apps.
+    </p>
+  </div>
+
+  <!-- FEATURES -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">2. Features</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+- Authentication (Login/Signup)
+- Firestore Database
+- Realtime Database
+- Hosting
+- Cloud Functions
+- Storage (files/images)
+</pre>
+  </div>
+
+  <!-- AUTH -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">3. Authentication</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+Supports:
+- Email/Password
+- Google Login
+- Phone OTP
+</pre>
+  </div>
+
+  <!-- JS EXAMPLE -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">4. Firebase Web Setup</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+import { initializeApp } from "firebase/app";
+
+const firebaseConfig = {
+  apiKey: "YOUR_KEY",
+  authDomain: "YOUR_PROJECT.firebaseapp.com",
+  projectId: "YOUR_PROJECT"
+};
+
+const app = initializeApp(firebaseConfig);
+</pre>
+  </div>
+
+  <!-- FIRESTORE -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">5. Firestore Database</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+import { getFirestore, addDoc, collection } from "firebase/firestore";
+
+const db = getFirestore(app);
+
+await addDoc(collection(db, "users"), {
+  name: "Sasank",
+  role: "Developer"
+});
+</pre>
+  </div>
+
+  <!-- REALTIME -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">6. Realtime Database</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+- Live data sync
+- Chat apps
+- Live notifications
+</pre>
+  </div>
+
+  <!-- HOSTING -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">7. Firebase Hosting</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+Commands:
+npm install -g firebase-tools
+firebase login
+firebase init
+firebase deploy
+</pre>
+  </div>
+
+  <!-- STORAGE -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">8. Storage</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+Used for:
+- Images
+- Videos
+- Files
+</pre>
+  </div>
+
+  <!-- USE CASES -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">9. Real Use Cases</h2>
+
+    <ul class="list-disc ml-5 text-gray-300">
+      <li>Chat apps 💬</li>
+      <li>Login systems 🔐</li>
+      <li>Social media apps 📱</li>
+      <li>Admin dashboards 📊</li>
+    </ul>
+  </div>
+
+  <!-- PROJECT -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">10. Mini Project Idea</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+Build a:
+- Login + Signup system
+- Save user data in Firestore
+- Show realtime updates
+</pre>
+  </div>
+
+</div>
+
+<footer class="text-center py-6 bg-black/40 mt-8">
+  <p class="text-gray-400">Firebase Learning 🔥</p>
+</footer>
+
+</body>
+</html>

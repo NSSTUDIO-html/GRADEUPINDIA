@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flutter Guide</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gradient-to-br from-black to-cyan-900 text-white font-sans">
+
+<header class="text-center py-8 bg-black/40">
+  <h1 class="text-4xl font-bold">Flutter Complete Guide 📱</h1>
+  <p class="text-gray-300">Build Android + iOS Apps with One Codebase</p>
+</header>
+
+<div class="max-w-6xl mx-auto p-6 space-y-6">
+
+  <!-- INTRO -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">1. What is Flutter?</h2>
+    <p class="text-gray-300">
+      Flutter is a UI framework by Google used to build cross-platform mobile apps using a single codebase.
+    </p>
+  </div>
+
+  <!-- LANGUAGE -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">2. Language Used</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+Flutter uses Dart language
+</pre>
+  </div>
+
+  <!-- BASIC APP -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">3. Basic Flutter App</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(title: Text("Hello Flutter")),
+        body: Center(child: Text("Welcome")),
+      ),
+    );
+  }
+}
+</pre>
+  </div>
+
+  <!-- WIDGETS -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">4. Widgets Concept</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+Everything in Flutter is a Widget
+
+Examples:
+- Text
+- Button
+- Container
+- Column
+- Row
+</pre>
+  </div>
+
+  <!-- BUTTON -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">5. Button Example</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+ElevatedButton(
+  onPressed: () {
+    print("Clicked");
+  },
+  child: Text("Click Me"),
+)
+</pre>
+  </div>
+
+  <!-- STATE -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">6. State Management</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+State means changing UI dynamically
+
+Example:
+setState(() {
+  counter++;
+});
+</pre>
+  </div>
+
+  <!-- LAYOUT -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">7. Layout System</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+Column → vertical layout
+Row → horizontal layout
+Container → box styling
+</pre>
+  </div>
+
+  <!-- NAVIGATION -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">8. Page Navigation</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+Navigator.push(
+  context,
+  MaterialPageRoute(builder: (context) => SecondPage()),
+);
+</pre>
+  </div>
+
+  <!-- API -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">9. API Integration</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+Use http package:
+- Fetch data from backend
+- Show JSON in UI
+</pre>
+  </div>
+
+  <!-- PROJECTS -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">10. Mini Projects</h2>
+
+    <ul class="list-disc ml-5 text-gray-300">
+      <li>Todo App 📋</li>
+      <li>Chat App 💬</li>
+      <li>Weather App 🌦️</li>
+      <li>Login App 🔐</li>
+    </ul>
+  </div>
+
+</div>
+
+<footer class="text-center py-6 bg-black/40 mt-8">
+  <p class="text-gray-400">Flutter Learning 📱</p>
+</footer>
+
+</body>
+</html>

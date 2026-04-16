@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Load Balancing Guide</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gradient-to-br from-black to-yellow-700 text-white font-sans">
+
+<header class="text-center py-8 bg-black/40">
+  <h1 class="text-4xl font-bold">Load Balancing Guide ⚖️🌐</h1>
+  <p class="text-gray-300">Distribute Traffic Efficiently</p>
+</header>
+
+<div class="max-w-6xl mx-auto p-6 space-y-6">
+
+  <!-- INTRO -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">1. What is Load Balancing?</h2>
+    <p class="text-gray-300">
+      Load balancing distributes incoming traffic across multiple servers to ensure reliability and performance.
+    </p>
+  </div>
+
+  <!-- WHY -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">2. Why Needed?</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+- Prevent server overload
+- Improve speed
+- Ensure high availability
+</pre>
+  </div>
+
+  <!-- TYPES -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">3. Types</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+Round Robin → Equal distribution
+Least Connections → Less busy server
+IP Hash → Same user to same server
+</pre>
+  </div>
+
+  <!-- ARCH -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">4. Architecture</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+User → Load Balancer → Multiple Servers
+</pre>
+  </div>
+
+  <!-- TOOLS -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">5. Tools</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+Nginx
+HAProxy
+AWS Elastic Load Balancer
+</pre>
+  </div>
+
+  <!-- NGINX -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">6. Nginx Example</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+upstream backend {
+  server server1;
+  server server2;
+}
+</pre>
+  </div>
+
+  <!-- BENEFITS -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">7. Benefits</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+- Scalability
+- Reliability
+- Performance
+</pre>
+  </div>
+
+  <!-- USE CASES -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">8. Real Use Cases</h2>
+
+    <ul class="list-disc ml-5 text-gray-300">
+      <li>Web apps 🌐</li>
+      <li>E-commerce platforms 🛒</li>
+      <li>Streaming services 🎥</li>
+      <li>Cloud systems ☁️</li>
+    </ul>
+  </div>
+
+</div>
+
+<footer class="text-center py-6 bg-black/40 mt-8">
+  <p class="text-gray-400">Load Balancing ⚖️🌐</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>NumPy Guide</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gradient-to-br from-black to-indigo-900 text-white font-sans">
+
+<header class="text-center py-8 bg-black/40">
+  <h1 class="text-4xl font-bold">NumPy Complete Guide 📊🐍</h1>
+  <p class="text-gray-300">Core Library for Data Science & AI</p>
+</header>
+
+<div class="max-w-6xl mx-auto p-6 space-y-6">
+
+  <!-- INTRO -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">1. What is NumPy?</h2>
+    <p class="text-gray-300">
+      NumPy is a Python library used for working with arrays, matrices, and mathematical operations.
+    </p>
+  </div>
+
+  <!-- INSTALL -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">2. Installation</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+pip install numpy
+</pre>
+  </div>
+
+  <!-- ARRAY -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">3. Creating Arrays</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+import numpy as np
+
+arr = np.array([1, 2, 3, 4])
+print(arr)
+</pre>
+  </div>
+
+  <!-- 2D ARRAY -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">4. 2D Arrays (Matrix)</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+matrix = np.array([
+    [1, 2],
+    [3, 4]
+])
+
+print(matrix)
+</pre>
+  </div>
+
+  <!-- OPERATIONS -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">5. Array Operations</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+a = np.array([1, 2, 3])
+b = np.array([4, 5, 6])
+
+print(a + b)
+print(a * b)
+</pre>
+  </div>
+
+  <!-- FUNCTIONS -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">6. NumPy Functions</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+np.zeros(5)   # [0,0,0,0,0]
+np.ones(3)    # [1,1,1]
+np.arange(10) # 0 to 9
+</pre>
+  </div>
+
+  <!-- STATS -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">7. Statistics</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+arr = np.array([10, 20, 30])
+
+print(np.mean(arr))
+print(np.sum(arr))
+print(np.max(arr))
+</pre>
+  </div>
+
+  <!-- INDEXING -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">8. Indexing</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+arr = np.array([10, 20, 30])
+
+print(arr[0])  # 10
+print(arr[2])  # 30
+</pre>
+  </div>
+
+  <!-- USE CASES -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">9. Real Use Cases</h2>
+
+    <ul class="list-disc ml-5 text-gray-300">
+      <li>Data Science 📊</li>
+      <li>Machine Learning 🤖</li>
+      <li>AI models 🧠</li>
+      <li>Scientific computing 🔬</li>
+    </ul>
+  </div>
+
+</div>
+
+<footer class="text-center py-6 bg-black/40 mt-8">
+  <p class="text-gray-400">NumPy Learning 📊🐍</p>
+</footer>
+
+</body>
+</html>

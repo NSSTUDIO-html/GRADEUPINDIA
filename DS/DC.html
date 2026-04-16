@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Data Cleaning Guide</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gradient-to-br from-black to-red-900 text-white font-sans">
+
+<header class="text-center py-8 bg-black/40">
+  <h1 class="text-4xl font-bold">Data Cleaning Guide 🧹📊</h1>
+  <p class="text-gray-300">Fix & Prepare Data for Analysis</p>
+</header>
+
+<div class="max-w-6xl mx-auto p-6 space-y-6">
+
+  <!-- INTRO -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">1. What is Data Cleaning?</h2>
+    <p class="text-gray-300">
+      Data Cleaning is the process of fixing missing, incorrect, or inconsistent data to make it usable.
+    </p>
+  </div>
+
+  <!-- ISSUES -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">2. Common Problems</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+- Missing values
+- Duplicate data
+- Wrong formats
+- Outliers
+</pre>
+  </div>
+
+  <!-- LOAD -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">3. Load Data</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+import pandas as pd
+
+df = pd.read_csv("data.csv")
+</pre>
+  </div>
+
+  <!-- MISSING -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">4. Handle Missing Values</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+df.dropna()        # remove rows
+df.fillna(0)       # fill with 0
+</pre>
+  </div>
+
+  <!-- DUPLICATES -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">5. Remove Duplicates</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+df.drop_duplicates()
+</pre>
+  </div>
+
+  <!-- FORMAT -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">6. Fix Data Types</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+df["Age"] = df["Age"].astype(int)
+</pre>
+  </div>
+
+  <!-- OUTLIERS -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">7. Remove Outliers</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+df = df[df["Age"] < 100]
+</pre>
+  </div>
+
+  <!-- RENAME -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">8. Rename Columns</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+df.rename(columns={"old":"new"}, inplace=True)
+</pre>
+  </div>
+
+  <!-- SAVE -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">9. Save Clean Data</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+df.to_csv("clean_data.csv", index=False)
+</pre>
+  </div>
+
+  <!-- USE CASES -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">10. Real Use Cases</h2>
+
+    <ul class="list-disc ml-5 text-gray-300">
+      <li>Preparing ML datasets 🤖</li>
+      <li>Business analytics 📊</li>
+      <li>Data pipelines ⚙️</li>
+      <li>Research data cleaning 🔬</li>
+    </ul>
+  </div>
+
+</div>
+
+<footer class="text-center py-6 bg-black/40 mt-8">
+  <p class="text-gray-400">Data Cleaning 🧹📊</p>
+</footer>
+
+</body>
+</html>

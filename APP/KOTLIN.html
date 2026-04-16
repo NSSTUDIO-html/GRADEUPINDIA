@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Kotlin Guide</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gradient-to-br from-black to-purple-900 text-white font-sans">
+
+<header class="text-center py-8 bg-black/40">
+  <h1 class="text-4xl font-bold">Kotlin Complete Guide 📱</h1>
+  <p class="text-gray-300">Modern Android Development Language</p>
+</header>
+
+<div class="max-w-6xl mx-auto p-6 space-y-6">
+
+  <!-- INTRO -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">1. What is Kotlin?</h2>
+    <p class="text-gray-300">
+      Kotlin is a modern programming language used for Android app development, officially supported by Google.
+    </p>
+  </div>
+
+  <!-- BASIC -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">2. First Program</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+fun main() {
+    println("Hello Kotlin")
+}
+</pre>
+  </div>
+
+  <!-- VARIABLES -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">3. Variables</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+val name = "Sasank"
+var age = 18
+</pre>
+  </div>
+
+  <!-- DATA TYPES -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">4. Data Types</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+Int, String, Double, Boolean
+</pre>
+  </div>
+
+  <!-- CONDITIONS -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">5. If-Else</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+val age = 18
+
+if(age >= 18){
+    println("Adult")
+}else{
+    println("Minor")
+}
+</pre>
+  </div>
+
+  <!-- LOOPS -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">6. Loops</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+for(i in 1..5){
+    println(i)
+}
+</pre>
+  </div>
+
+  <!-- FUNCTIONS -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">7. Functions</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+fun add(a: Int, b: Int): Int {
+    return a + b
+}
+</pre>
+  </div>
+
+  <!-- OOP -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">8. OOP in Kotlin</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+class Car(val model: String) {
+    fun drive(){
+        println("Car is running")
+    }
+}
+</pre>
+  </div>
+
+  <!-- ANDROID EXAMPLE -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">9. Android MainActivity</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+class MainActivity : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+    }
+}
+</pre>
+  </div>
+
+  <!-- BUTTON CLICK -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">10. Button Click</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+button.setOnClickListener {
+    textView.text = "Clicked!"
+}
+</pre>
+  </div>
+
+  <!-- MINI PROJECT -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">11. Mini Project Ideas</h2>
+
+    <ul class="list-disc ml-5 text-gray-300">
+      <li>To-Do App 📋</li>
+      <li>Calculator App 🧮</li>
+      <li>Login Screen 🔐</li>
+      <li>Weather App 🌦️</li>
+    </ul>
+  </div>
+
+</div>
+
+<footer class="text-center py-6 bg-black/40 mt-8">
+  <p class="text-gray-400">Kotlin Learning 📱</p>
+</footer>
+
+</body>
+</html>

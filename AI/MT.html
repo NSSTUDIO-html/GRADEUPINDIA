@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Model Training Guide</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gradient-to-br from-black to-orange-800 text-white font-sans">
+
+<header class="text-center py-8 bg-black/40">
+  <h1 class="text-4xl font-bold">Model Training Guide 🤖⚙️</h1>
+  <p class="text-gray-300">Teach Models Using Data</p>
+</header>
+
+<div class="max-w-6xl mx-auto p-6 space-y-6">
+
+  <!-- INTRO -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">1. What is Model Training?</h2>
+    <p class="text-gray-300">
+      Model Training is the process of feeding data into an algorithm so it can learn patterns and make predictions.
+    </p>
+  </div>
+
+  <!-- STEPS -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">2. Steps</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+1. Prepare data
+2. Split data
+3. Train model
+4. Evaluate model
+5. Improve model
+</pre>
+  </div>
+
+  <!-- SPLIT -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">3. Train-Test Split</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+from sklearn.model_selection import train_test_split
+
+X_train, X_test, y_train, y_test =
+train_test_split(X, y, test_size=0.2)
+</pre>
+  </div>
+
+  <!-- TRAIN -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">4. Train Model</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+from sklearn.linear_model import LinearRegression
+
+model = LinearRegression()
+model.fit(X_train, y_train)
+</pre>
+  </div>
+
+  <!-- PREDICT -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">5. Prediction</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+y_pred = model.predict(X_test)
+</pre>
+  </div>
+
+  <!-- EVALUATE -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">6. Evaluation</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+from sklearn.metrics import mean_squared_error
+
+print(mean_squared_error(y_test, y_pred))
+</pre>
+  </div>
+
+  <!-- DL TRAIN -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">7. Deep Learning Training</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+model.fit(X_train, y_train, epochs=10)
+</pre>
+  </div>
+
+  <!-- OVERFITTING -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">8. Overfitting vs Underfitting</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+Overfitting → Too accurate on training, fails on test
+Underfitting → Poor performance overall
+</pre>
+  </div>
+
+  <!-- IMPROVE -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">9. Improve Model</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+- More data
+- Feature engineering
+- Hyperparameter tuning
+</pre>
+  </div>
+
+  <!-- USE CASES -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">10. Real Use Cases</h2>
+
+    <ul class="list-disc ml-5 text-gray-300">
+      <li>Prediction systems 📈</li>
+      <li>Recommendation engines 🎯</li>
+      <li>AI apps 🤖</li>
+      <li>Fraud detection 🔐</li>
+    </ul>
+  </div>
+
+</div>
+
+<footer class="text-center py-6 bg-black/40 mt-8">
+  <p class="text-gray-400">Model Training 🤖⚙️</p>
+</footer>
+
+</body>
+</html>

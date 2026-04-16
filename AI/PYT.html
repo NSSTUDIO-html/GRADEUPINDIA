@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PyTorch Guide</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gradient-to-br from-black to-orange-900 text-white font-sans">
+
+<header class="text-center py-8 bg-black/40">
+  <h1 class="text-4xl font-bold">PyTorch Guide 🔥🤖</h1>
+  <p class="text-gray-300">Deep Learning & AI Framework</p>
+</header>
+
+<div class="max-w-6xl mx-auto p-6 space-y-6">
+
+  <!-- INTRO -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">1. What is PyTorch?</h2>
+    <p class="text-gray-300">
+      PyTorch is an open-source deep learning framework used to build neural networks and AI models.
+    </p>
+  </div>
+
+  <!-- INSTALL -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">2. Installation</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+pip install torch torchvision
+</pre>
+  </div>
+
+  <!-- IMPORT -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">3. Import</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+import torch
+import torch.nn as nn
+</pre>
+  </div>
+
+  <!-- TENSOR -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">4. Tensors</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+x = torch.tensor([1, 2, 3])
+print(x)
+</pre>
+  </div>
+
+  <!-- MODEL -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">5. Neural Network</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+model = nn.Sequential(
+  nn.Linear(1, 10),
+  nn.ReLU(),
+  nn.Linear(10, 1)
+)
+</pre>
+  </div>
+
+  <!-- LOSS -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">6. Loss Function</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+loss_fn = nn.MSELoss()
+</pre>
+  </div>
+
+  <!-- OPTIMIZER -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">7. Optimizer</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+optimizer = torch.optim.Adam(model.parameters(), lr=0.01)
+</pre>
+  </div>
+
+  <!-- TRAIN -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">8. Training Loop</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+for epoch in range(10):
+  y_pred = model(X)
+  loss = loss_fn(y_pred, y)
+
+  optimizer.zero_grad()
+  loss.backward()
+  optimizer.step()
+</pre>
+  </div>
+
+  <!-- USE CASES -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">9. Real Use Cases</h2>
+
+    <ul class="list-disc ml-5 text-gray-300">
+      <li>Computer Vision 🖼️</li>
+      <li>Natural Language Processing 🧠</li>
+      <li>AI Chatbots 🤖</li>
+      <li>Deep Learning research 🔬</li>
+    </ul>
+  </div>
+
+</div>
+
+<footer class="text-center py-6 bg-black/40 mt-8">
+  <p class="text-gray-400">PyTorch Learning 🔥🤖</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Docker Guide</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gradient-to-br from-black to-blue-900 text-white font-sans">
+
+<header class="text-center py-8 bg-black/40">
+  <h1 class="text-4xl font-bold">Docker Guide 🐳</h1>
+  <p class="text-gray-300">Containerization & Deployment</p>
+</header>
+
+<div class="max-w-6xl mx-auto p-6 space-y-6">
+
+  <!-- INTRO -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">1. What is Docker?</h2>
+    <p class="text-gray-300">
+      Docker is a platform that packages applications into containers so they run the same on any system.
+    </p>
+  </div>
+
+  <!-- CONCEPT -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">2. Key Concepts</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+Image → Blueprint of app
+Container → Running app
+Dockerfile → Instructions to build image
+</pre>
+  </div>
+
+  <!-- DOCKERFILE -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">3. Dockerfile Example</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+FROM node:18
+WORKDIR /app
+COPY . .
+RUN npm install
+CMD ["node", "app.js"]
+</pre>
+  </div>
+
+  <!-- BUILD -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">4. Build Image</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+docker build -t myapp .
+</pre>
+  </div>
+
+  <!-- RUN -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">5. Run Container</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+docker run -p 3000:3000 myapp
+</pre>
+  </div>
+
+  <!-- BENEFITS -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">6. Benefits</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+- Same environment everywhere
+- Easy deployment
+- Scalable apps
+</pre>
+  </div>
+
+  <!-- USE CASES -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">7. Real Use Cases</h2>
+
+    <ul class="list-disc ml-5 text-gray-300">
+      <li>Deploy web apps 🌐</li>
+      <li>Run microservices ⚙️</li>
+      <li>Data pipelines 📊</li>
+      <li>DevOps workflows 🚀</li>
+    </ul>
+  </div>
+
+</div>
+
+<footer class="text-center py-6 bg-black/40 mt-8">
+  <p class="text-gray-400">Docker 🐳</p>
+</footer>
+
+</body>
+</html>
