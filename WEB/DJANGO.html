@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Django Syllabus</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gradient-to-br from-black to-green-800 text-white font-sans">
+
+<header class="text-center py-8 bg-black/40">
+  <h1 class="text-4xl font-bold">Django Complete Guide 🟢</h1>
+  <p class="text-gray-300">Backend Framework for Python Web Apps</p>
+</header>
+
+<div class="max-w-6xl mx-auto p-6 space-y-6">
+
+  <!-- INTRO -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">1. Introduction</h2>
+    <p class="text-gray-300 mb-3">
+      Django is a high-level Python web framework that allows fast development of secure web applications.
+    </p>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+pip install django
+django-admin startproject mysite
+</pre>
+  </div>
+
+  <!-- PROJECT STRUCTURE -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">2. Project Structure</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+mysite/
+ ├── manage.py
+ ├── mysite/
+ │    ├── settings.py
+ │    ├── urls.py
+ │    └── wsgi.py
+</pre>
+  </div>
+
+  <!-- APP -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">3. Create App</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+python manage.py startapp blog
+</pre>
+  </div>
+
+  <!-- VIEW -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">4. Views</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+from django.http import HttpResponse
+
+def home(request):
+    return HttpResponse("Hello Django")
+</pre>
+  </div>
+
+  <!-- URLS -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">5. URLs</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+from django.urls import path
+from . import views
+
+urlpatterns = [
+    path('', views.home),
+]
+</pre>
+  </div>
+
+  <!-- MODELS -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">6. Models (Database)</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+from django.db import models
+
+class Post(models.Model):
+    title = models.CharField(max_length=100)
+    content = models.TextField()
+</pre>
+  </div>
+
+  <!-- MIGRATION -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">7. Migrations</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+python manage.py makemigrations
+python manage.py migrate
+</pre>
+  </div>
+
+  <!-- ADMIN -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">8. Admin Panel</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+from django.contrib import admin
+from .models import Post
+
+admin.site.register(Post)
+</pre>
+  </div>
+
+  <!-- FORMS -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">9. Forms</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+from django import forms
+
+class PostForm(forms.Form):
+    title = forms.CharField()
+</pre>
+  </div>
+
+  <!-- TEMPLATE -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">10. Templates</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+&lt;h1&gt;{{ title }}&lt;/h1&gt;
+</pre>
+  </div>
+
+  <!-- CRUD -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">11. CRUD</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+# Create, Read, Update, Delete
+Post.objects.create(title="Hello")
+</pre>
+  </div>
+
+  <!-- MINI PROJECT -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">12. Mini Project Idea</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+# Blog System
+- Add posts
+- Edit posts
+- Delete posts
+</pre>
+  </div>
+
+</div>
+
+<footer class="text-center py-6 bg-black/40 mt-8">
+  <p class="text-gray-400">Django Learning 🟢🐍</p>
+</footer>
+
+</body>
+</html>

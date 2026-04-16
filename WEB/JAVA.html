@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Java Syllabus</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gradient-to-br from-black to-red-900 text-white font-sans">
+
+<header class="text-center py-8 bg-black/40">
+  <h1 class="text-4xl font-bold">Java Complete Guide ☕</h1>
+  <p class="text-gray-300">OOP + Backend + Interview Prep</p>
+</header>
+
+<div class="max-w-6xl mx-auto p-6 space-y-6">
+
+  <!-- INTRO -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">1. Introduction</h2>
+    <p class="text-gray-300 mb-3">
+      Java is a high-level, object-oriented programming language used in backend systems, Android apps, and enterprise software.
+    </p>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello Java");
+    }
+}
+</pre>
+  </div>
+
+  <!-- VARIABLES -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">2. Variables</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+int age = 18;
+String name = "Sasank";
+double price = 99.5;
+</pre>
+  </div>
+
+  <!-- DATA TYPES -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">3. Data Types</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+int, float, double, char, boolean, String
+</pre>
+  </div>
+
+  <!-- CONDITIONS -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">4. Conditions</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+int age = 18;
+
+if(age >= 18){
+    System.out.println("Adult");
+}else{
+    System.out.println("Minor");
+}
+</pre>
+  </div>
+
+  <!-- LOOPS -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">5. Loops</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+for(int i=0; i<5; i++){
+    System.out.println(i);
+}
+</pre>
+  </div>
+
+  <!-- FUNCTIONS -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">6. Methods</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+class Test {
+    static void greet(){
+        System.out.println("Hello");
+    }
+}
+</pre>
+  </div>
+
+  <!-- OOP -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">7. OOP Concepts</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+class Person {
+    String name;
+
+    Person(String name){
+        this.name = name;
+    }
+}
+</pre>
+  </div>
+
+  <!-- INHERITANCE -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">8. Inheritance</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+class A {
+    void show(){
+        System.out.println("A class");
+    }
+}
+
+class B extends A {}
+</pre>
+  </div>
+
+  <!-- POLYMORPHISM -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">9. Polymorphism</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+class A {
+    void show(){
+        System.out.println("Parent");
+    }
+}
+</pre>
+  </div>
+
+  <!-- EXCEPTION -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">10. Exception Handling</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+try {
+    int x = 10/0;
+} catch(Exception e){
+    System.out.println("Error");
+}
+</pre>
+  </div>
+
+  <!-- ARRAY -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">11. Arrays</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+int[] arr = {1,2,3};
+
+for(int i : arr){
+    System.out.println(i);
+}
+</pre>
+  </div>
+
+  <!-- MINI PROJECT -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">12. Mini Project</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+# Simple Calculator Idea
+- Add numbers
+- Subtract numbers
+- Multiply numbers
+</pre>
+  </div>
+
+</div>
+
+<footer class="text-center py-6 bg-black/40 mt-8">
+  <p class="text-gray-400">Java Learning ☕</p>
+</footer>
+
+</body>
+</html>

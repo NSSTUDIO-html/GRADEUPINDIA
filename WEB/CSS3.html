@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS3 Syllabus with Code</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gradient-to-br from-black to-purple-900 text-white font-sans">
+
+<header class="text-center py-8 bg-black/40">
+  <h1 class="text-4xl font-bold">CSS3 Complete Guide</h1>
+  <p class="text-gray-300">Theory + Code Examples 🎨</p>
+</header>
+
+<div class="max-w-6xl mx-auto p-6 space-y-6">
+
+  <!-- INTRO -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">1. Introduction</h2>
+    <p class="text-gray-300 mb-3">
+      CSS (Cascading Style Sheets) is used to style HTML elements like colors, layout, and fonts.
+    </p>
+
+<pre class="bg-black p-3 rounded text-green-400">
+p {
+  color: red;
+}
+</pre>
+  </div>
+
+  <!-- SELECTORS -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">2. Selectors</h2>
+
+<pre class="bg-black p-3 rounded text-green-400">
+/* element */
+p { color: blue; }
+
+/* class */
+.box { background: yellow; }
+
+/* id */
+#title { font-size: 30px; }
+</pre>
+  </div>
+
+  <!-- COLORS -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">3. Colors & Units</h2>
+
+<pre class="bg-black p-3 rounded text-green-400">
+body {
+  background: #111;
+  color: rgb(255,255,255);
+  font-size: 16px;
+}
+</pre>
+  </div>
+
+  <!-- BOX MODEL -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">4. Box Model</h2>
+
+<pre class="bg-black p-3 rounded text-green-400">
+div {
+  margin: 10px;
+  padding: 20px;
+  border: 2px solid white;
+}
+</pre>
+  </div>
+
+  <!-- DISPLAY -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">5. Display & Position</h2>
+
+<pre class="bg-black p-3 rounded text-green-400">
+div {
+  display: flex;
+  position: relative;
+}
+</pre>
+  </div>
+
+  <!-- FLEXBOX -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">6. Flexbox</h2>
+
+<pre class="bg-black p-3 rounded text-green-400">
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+</pre>
+  </div>
+
+  <!-- GRID -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">7. Grid</h2>
+
+<pre class="bg-black p-3 rounded text-green-400">
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+</pre>
+  </div>
+
+  <!-- BACKGROUND -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">8. Backgrounds</h2>
+
+<pre class="bg-black p-3 rounded text-green-400">
+body {
+  background: linear-gradient(to right, blue, purple);
+}
+</pre>
+  </div>
+
+  <!-- ANIMATION -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">9. Transitions & Animation</h2>
+
+<pre class="bg-black p-3 rounded text-green-400">
+.box {
+  transition: 0.3s;
+}
+.box:hover {
+  transform: scale(1.2);
+}
+</pre>
+  </div>
+
+  <!-- MEDIA -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">10. Media Queries</h2>
+
+<pre class="bg-black p-3 rounded text-green-400">
+@media (max-width: 600px) {
+  body {
+    background: red;
+  }
+}
+</pre>
+  </div>
+
+  <!-- VARIABLES -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">11. CSS Variables</h2>
+
+<pre class="bg-black p-3 rounded text-green-400">
+:root {
+  --main: blue;
+}
+
+p {
+  color: var(--main);
+}
+</pre>
+  </div>
+
+  <!-- BEST -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">12. Best Practices</h2>
+
+<pre class="bg-black p-3 rounded text-green-400">
+/* Keep code clean */
+.container {
+  display: flex;
+}
+</pre>
+  </div>
+
+</div>
+
+<footer class="text-center py-6 bg-black/40 mt-8">
+  <p class="text-gray-400">CSS3 Learning Site 🎨</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MySQL Syllabus</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gradient-to-br from-black to-blue-800 text-white font-sans">
+
+<header class="text-center py-8 bg-black/40">
+  <h1 class="text-4xl font-bold">MySQL Complete Guide 🗄️</h1>
+  <p class="text-gray-300">Database + SQL + Queries</p>
+</header>
+
+<div class="max-w-6xl mx-auto p-6 space-y-6">
+
+  <!-- INTRO -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">1. Introduction</h2>
+    <p class="text-gray-300 mb-3">
+      MySQL is a relational database used to store and manage data in tables using SQL queries.
+    </p>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+-- Start MySQL
+mysql -u root -p
+</pre>
+  </div>
+
+  <!-- DATABASE -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">2. Database Commands</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+CREATE DATABASE school;
+
+USE school;
+</pre>
+  </div>
+
+  <!-- TABLE -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">3. Create Table</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+CREATE TABLE students (
+  id INT PRIMARY KEY,
+  name VARCHAR(50),
+  age INT
+);
+</pre>
+  </div>
+
+  <!-- INSERT -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">4. Insert Data</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+INSERT INTO students VALUES (1, 'Sasank', 18);
+</pre>
+  </div>
+
+  <!-- SELECT -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">5. Select Data</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+SELECT * FROM students;
+SELECT name FROM students;
+</pre>
+  </div>
+
+  <!-- WHERE -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">6. WHERE Condition</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+SELECT * FROM students WHERE age > 18;
+</pre>
+  </div>
+
+  <!-- UPDATE -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">7. Update Data</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+UPDATE students
+SET age = 20
+WHERE id = 1;
+</pre>
+  </div>
+
+  <!-- DELETE -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">8. Delete Data</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+DELETE FROM students WHERE id = 1;
+</pre>
+  </div>
+
+  <!-- ORDER BY -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">9. Sorting</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+SELECT * FROM students ORDER BY age DESC;
+</pre>
+  </div>
+
+  <!-- FUNCTIONS -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">10. Functions</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+SELECT COUNT(*) FROM students;
+SELECT MAX(age) FROM students;
+</pre>
+  </div>
+
+  <!-- JOIN -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">11. JOIN</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+SELECT students.name, marks.score
+FROM students
+JOIN marks ON students.id = marks.id;
+</pre>
+  </div>
+
+  <!-- MINI PROJECT -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">12. Mini Project Idea</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+School Database:
+- Students table
+- Marks table
+- Attendance system
+</pre>
+  </div>
+
+</div>
+
+<footer class="text-center py-6 bg-black/40 mt-8">
+  <p class="text-gray-400">MySQL Learning 🗄️</p>
+</footer>
+
+</body>
+</html>

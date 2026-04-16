@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Node.js Guide</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gradient-to-br from-black to-green-900 text-white font-sans">
+
+<header class="text-center py-8 bg-black/40">
+  <h1 class="text-4xl font-bold">Node.js Complete Guide 🟢</h1>
+  <p class="text-gray-300">Backend + Server + APIs</p>
+</header>
+
+<div class="max-w-6xl mx-auto p-6 space-y-6">
+
+  <!-- INTRO -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">1. Introduction</h2>
+    <p class="text-gray-300 mb-3">
+      Node.js is a runtime that allows JavaScript to run on the server.
+    </p>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+console.log("Node.js running");
+</pre>
+  </div>
+
+  <!-- MODULE -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">2. Modules</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+const fs = require("fs");
+fs.writeFileSync("file.txt", "Hello");
+</pre>
+  </div>
+
+  <!-- SERVER -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">3. HTTP Server</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+const http = require("http");
+
+http.createServer((req,res)=>{
+  res.write("Hello Server");
+  res.end();
+}).listen(3000);
+</pre>
+  </div>
+
+  <!-- EXPRESS -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">4. Express.js</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+const express = require("express");
+const app = express();
+
+app.get("/", (req,res)=>{
+  res.send("Hello Express");
+});
+
+app.listen(3000);
+</pre>
+  </div>
+
+  <!-- ROUTES -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">5. Routing</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+app.get("/user", (req,res)=>{
+  res.send("User Page");
+});
+</pre>
+  </div>
+
+  <!-- MIDDLEWARE -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">6. Middleware</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+app.use((req,res,next)=>{
+  console.log("Request");
+  next();
+});
+</pre>
+  </div>
+
+  <!-- API -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">7. REST API</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+app.get("/api", (req,res)=>{
+  res.json({msg:"API data"});
+});
+</pre>
+  </div>
+
+  <!-- DB -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">8. MongoDB</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+const mongoose = require("mongoose");
+
+mongoose.connect("mongodb://localhost/test");
+</pre>
+  </div>
+
+  <!-- AUTH -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">9. Authentication</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+const jwt = require("jsonwebtoken");
+
+const token = jwt.sign({id:1}, "secret");
+</pre>
+  </div>
+
+  <!-- FILE -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">10. File Handling</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+fs.readFile("file.txt","utf8",(err,data)=>{
+  console.log(data);
+});
+</pre>
+  </div>
+
+</div>
+
+<footer class="text-center py-6 bg-black/40 mt-8">
+  <p class="text-gray-400">Node.js Learning 🟢</p>
+</footer>
+
+</body>
+</html>

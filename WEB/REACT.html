@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>React Syllabus with Code</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- React CDN -->
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+  <!-- Babel -->
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+
+<body class="bg-gradient-to-br from-black to-cyan-900 text-white">
+
+<header class="text-center py-8 bg-black/40">
+  <h1 class="text-4xl font-bold">React Complete Guide ⚛️</h1>
+  <p class="text-gray-300">Components + Logic + Code</p>
+</header>
+
+<div class="max-w-6xl mx-auto p-6 space-y-6">
+
+  <!-- INTRO -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">1. Introduction</h2>
+    <p class="text-gray-300">React is a JavaScript library for building UI using components.</p>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+const element = &lt;h1&gt;Hello React&lt;/h1&gt;;
+</pre>
+  </div>
+
+  <!-- COMPONENT -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">2. Components</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+function App(){
+  return &lt;h1&gt;Hello World&lt;/h1&gt;;
+}
+</pre>
+  </div>
+
+  <!-- JSX -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">3. JSX</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+const name = "Sasank";
+const el = &lt;h1&gt;Hello {name}&lt;/h1&gt;;
+</pre>
+  </div>
+
+  <!-- PROPS -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">4. Props</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+function User(props){
+  return &lt;h1&gt;{props.name}&lt;/h1&gt;;
+}
+</pre>
+  </div>
+
+  <!-- STATE -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">5. useState</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+const [count,setCount] = React.useState(0);
+</pre>
+  </div>
+
+  <!-- EVENTS -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">6. Events</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+&lt;button onClick={() => alert("Clicked")}&gt;
+Click
+&lt;/button&gt;
+</pre>
+  </div>
+
+  <!-- LIST -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">7. Lists</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+const arr = [1,2,3];
+
+arr.map(x => &lt;p&gt;{x}&lt;/p&gt;)
+</pre>
+  </div>
+
+  <!-- FORM -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">8. Forms</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+&lt;input onChange={(e)=>console.log(e.target.value)} /&gt;
+</pre>
+  </div>
+
+</div>
+
+<!-- LIVE DEMO -->
+<div id="root" class="text-center mt-10"></div>
+
+<footer class="text-center py-6 bg-black/40 mt-8">
+  <p class="text-gray-400">React Learning ⚛️</p>
+</footer>
+
+<script type="text/babel">
+
+function App(){
+  const [count,setCount] = React.useState(0);
+
+  return (
+    <div className="text-center">
+      <h2 className="text-2xl mb-4">Live Counter Demo</h2>
+      <p className="text-xl">{count}</p>
+      <button 
+        className="bg-cyan-500 px-4 py-2 rounded mt-3"
+        onClick={() => setCount(count + 1)}
+      >
+        Increase
+      </button>
+    </div>
+  );
+}
+
+ReactDOM.createRoot(document.getElementById("root")).render(<App />);
+
+</script>
+
+</body>
+</html>

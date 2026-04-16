@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tailwind CSS Guide</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gradient-to-br from-gray-900 to-teal-900 text-white font-sans">
+
+<header class="text-center py-8 bg-black/40">
+  <h1 class="text-4xl font-bold">Tailwind CSS Complete Guide 🎨</h1>
+  <p class="text-gray-300">Utility Classes + UI Examples</p>
+</header>
+
+<div class="max-w-6xl mx-auto p-6 space-y-6">
+
+  <!-- INTRO -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">1. Introduction</h2>
+    <p class="text-gray-300 mb-3">
+      Tailwind CSS is a utility-first CSS framework used to build modern UI quickly.
+    </p>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+&lt;h1 class="text-3xl text-blue-500"&gt;Hello&lt;/h1&gt;
+</pre>
+  </div>
+
+  <!-- COLORS -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">2. Colors</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+&lt;div class="bg-blue-500 text-white p-4"&gt;
+  Box
+&lt;/div&gt;
+</pre>
+
+    <div class="mt-4 bg-blue-500 p-4 rounded">Live Example</div>
+  </div>
+
+  <!-- SPACING -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">3. Spacing</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+&lt;div class="m-4 p-4 bg-green-500"&gt;Box&lt;/div&gt;
+</pre>
+
+    <div class="m-4 p-4 bg-green-500 rounded">Spacing Example</div>
+  </div>
+
+  <!-- FLEX -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">4. Flexbox</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+&lt;div class="flex justify-center items-center"&gt;
+  &lt;div&gt;Center&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
+    <div class="flex justify-center items-center h-20 bg-gray-700 rounded">
+      Centered Content
+    </div>
+  </div>
+
+  <!-- GRID -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">5. Grid</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+&lt;div class="grid grid-cols-3 gap-4"&gt;
+  &lt;div&gt;1&lt;/div&gt;
+  &lt;div&gt;2&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
+    <div class="grid grid-cols-3 gap-4 mt-3">
+      <div class="bg-purple-500 p-4 rounded">1</div>
+      <div class="bg-purple-500 p-4 rounded">2</div>
+      <div class="bg-purple-500 p-4 rounded">3</div>
+    </div>
+  </div>
+
+  <!-- BUTTON -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">6. Buttons</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+&lt;button class="bg-blue-500 px-4 py-2 rounded"&gt;
+Click
+&lt;/button&gt;
+</pre>
+
+    <button class="bg-blue-500 px-4 py-2 rounded hover:bg-blue-700 mt-3">
+      Click Me
+    </button>
+  </div>
+
+  <!-- CARD -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">7. Cards</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+&lt;div class="bg-white text-black p-4 rounded"&gt;
+Card
+&lt;/div&gt;
+</pre>
+
+    <div class="bg-white text-black p-4 rounded mt-3">
+      Tailwind Card Example
+    </div>
+  </div>
+
+  <!-- RESPONSIVE -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">8. Responsive</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+&lt;div class="text-sm md:text-xl"&gt;
+Responsive Text
+&lt;/div&gt;
+</pre>
+
+    <div class="text-sm md:text-xl mt-3">
+      Resize screen to see change
+    </div>
+  </div>
+
+  <!-- HOVER -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">9. Hover Effects</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+&lt;div class="hover:scale-110 transition"&gt;
+Hover Me
+&lt;/div&gt;
+</pre>
+
+    <div class="bg-pink-500 p-4 rounded mt-3 hover:scale-110 transition">
+      Hover Me
+    </div>
+  </div>
+
+  <!-- DARK MODE -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">10. Dark Mode</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+&lt;div class="dark:bg-black"&gt;Dark Mode&lt;/div&gt;
+</pre>
+  </div>
+
+</div>
+
+<footer class="text-center py-6 bg-black/40 mt-8">
+  <p class="text-gray-400">Tailwind Learning 🎨</p>
+</footer>
+
+</body>
+</html>

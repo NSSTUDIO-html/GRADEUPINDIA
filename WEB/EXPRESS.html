@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Express.js Guide</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gradient-to-br from-black to-blue-900 text-white font-sans">
+
+<header class="text-center py-8 bg-black/40">
+  <h1 class="text-4xl font-bold">Express.js Complete Guide 🚀</h1>
+  <p class="text-gray-300">Fast Backend Development</p>
+</header>
+
+<div class="max-w-6xl mx-auto p-6 space-y-6">
+
+  <!-- INTRO -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">1. Introduction</h2>
+    <p class="text-gray-300 mb-3">
+      Express.js is a minimal Node.js framework used to build APIs and web servers easily.
+    </p>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+const express = require("express");
+const app = express();
+</pre>
+  </div>
+
+  <!-- SERVER -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">2. Basic Server</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+app.get("/", (req,res)=>{
+  res.send("Hello Express");
+});
+
+app.listen(3000);
+</pre>
+  </div>
+
+  <!-- ROUTING -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">3. Routing</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+app.get("/about", (req,res)=>{
+  res.send("About Page");
+});
+</pre>
+  </div>
+
+  <!-- MIDDLEWARE -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">4. Middleware</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+app.use((req,res,next)=>{
+  console.log("Request received");
+  next();
+});
+</pre>
+  </div>
+
+  <!-- JSON -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">5. JSON Handling</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+app.use(express.json());
+
+app.post("/data", (req,res)=>{
+  console.log(req.body);
+  res.send("Data received");
+});
+</pre>
+  </div>
+
+  <!-- ROUTER -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">6. Router</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+const router = express.Router();
+
+router.get("/", (req,res)=>{
+  res.send("User route");
+});
+
+app.use("/user", router);
+</pre>
+  </div>
+
+  <!-- PARAMS -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">7. Params</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+app.get("/user/:id", (req,res)=>{
+  res.send(req.params.id);
+});
+</pre>
+  </div>
+
+  <!-- QUERY -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">8. Query</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+app.get("/search", (req,res)=>{
+  res.send(req.query.name);
+});
+</pre>
+  </div>
+
+  <!-- STATIC -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">9. Static Files</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+app.use(express.static("public"));
+</pre>
+  </div>
+
+  <!-- ERROR -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">10. Error Handling</h2>
+
+<pre class="bg-black p-3 text-green-400 rounded">
+app.use((err,req,res,next)=>{
+  res.status(500).send("Error");
+});
+</pre>
+  </div>
+
+</div>
+
+<footer class="text-center py-6 bg-black/40 mt-8">
+  <p class="text-gray-400">Express.js Learning 🚀</p>
+</footer>
+
+</body>
+</html>

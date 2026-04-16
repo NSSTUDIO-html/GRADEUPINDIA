@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript Syllabus with Code</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gradient-to-br from-black to-yellow-900 text-white font-sans">
+
+<header class="text-center py-8 bg-black/40">
+  <h1 class="text-4xl font-bold">JavaScript Complete Guide</h1>
+  <p class="text-gray-300">Logic + Code Examples ⚡</p>
+</header>
+
+<div class="max-w-6xl mx-auto p-6 space-y-6">
+
+  <!-- INTRO -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">1. Introduction</h2>
+    <p class="text-gray-300 mb-3">
+      JavaScript is used to make websites interactive and dynamic.
+    </p>
+
+<pre class="bg-black p-3 rounded text-green-400">
+console.log("Hello World");
+</pre>
+  </div>
+
+  <!-- VARIABLES -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">2. Variables</h2>
+
+<pre class="bg-black p-3 rounded text-green-400">
+let name = "Sasank";
+const age = 18;
+var city = "India";
+</pre>
+  </div>
+
+  <!-- DATA TYPES -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">3. Data Types</h2>
+
+<pre class="bg-black p-3 rounded text-green-400">
+let x = 10;       // number
+let y = "text";   // string
+let z = true;     // boolean
+</pre>
+  </div>
+
+  <!-- OPERATORS -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">4. Operators</h2>
+
+<pre class="bg-black p-3 rounded text-green-400">
+let sum = 5 + 3;
+let isEqual = (5 == "5");
+</pre>
+  </div>
+
+  <!-- CONDITIONS -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">5. Conditions</h2>
+
+<pre class="bg-black p-3 rounded text-green-400">
+let age = 18;
+
+if(age >= 18){
+  console.log("Adult");
+}else{
+  console.log("Minor");
+}
+</pre>
+  </div>
+
+  <!-- LOOPS -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">6. Loops</h2>
+
+<pre class="bg-black p-3 rounded text-green-400">
+for(let i=0; i<5; i++){
+  console.log(i);
+}
+</pre>
+  </div>
+
+  <!-- FUNCTIONS -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">7. Functions</h2>
+
+<pre class="bg-black p-3 rounded text-green-400">
+function greet(name){
+  return "Hello " + name;
+}
+
+console.log(greet("Sasank"));
+</pre>
+  </div>
+
+  <!-- ARRAYS -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">8. Arrays</h2>
+
+<pre class="bg-black p-3 rounded text-green-400">
+let arr = [1,2,3];
+
+arr.forEach(x => console.log(x));
+</pre>
+  </div>
+
+  <!-- OBJECTS -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">9. Objects</h2>
+
+<pre class="bg-black p-3 rounded text-green-400">
+let user = {
+  name: "Sasank",
+  age: 18
+};
+
+console.log(user.name);
+</pre>
+  </div>
+
+  <!-- DOM -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">10. DOM Manipulation</h2>
+
+<pre class="bg-black p-3 rounded text-green-400">
+document.getElementById("btn").onclick = function(){
+  alert("Clicked!");
+};
+</pre>
+  </div>
+
+  <!-- EVENTS -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">11. Events</h2>
+
+<pre class="bg-black p-3 rounded text-green-400">
+button.addEventListener("click", function(){
+  console.log("Clicked");
+});
+</pre>
+  </div>
+
+  <!-- API -->
+  <div class="bg-white/10 p-6 rounded-2xl">
+    <h2 class="text-2xl font-bold mb-2">12. Fetch API</h2>
+
+<pre class="bg-black p-3 rounded text-green-400">
+fetch("https://api.github.com/users")
+  .then(res => res.json())
+  .then(data => console.log(data));
+</pre>
+  </div>
+
+</div>
+
+<!-- Demo Button -->
+<div class="text-center mt-6">
+  <button id="btn" class="bg-yellow-500 px-6 py-2 rounded-xl text-black font-bold">
+    Click Me (JS Demo)
+  </button>
+</div>
+
+<footer class="text-center py-6 bg-black/40 mt-8">
+  <p class="text-gray-400">JavaScript Learning Site ⚡</p>
+</footer>
+
+<script>
+  document.getElementById("btn").onclick = function(){
+    alert("JavaScript is working 🚀");
+  };
+</script>
+
+</body>
+</html>
